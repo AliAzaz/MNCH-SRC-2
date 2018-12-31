@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LEAPS Scale up</string>
+    <string name="app_name">MNCH SRC-2</string>
 
     <!--copied Strings for splash, login and main screen-->
     <string name="action_sign_in_short">Sign in</string>
@@ -45,6 +45,381 @@
     <string name="nextSection">ايندڙ سيڪشن</string>
     <string name="end_interview">ختم ڪيو</string>
     <string name="addMember">افراد کا اندراج</string>
+
+
+    <string name="no_answer"> ڪو به جواب نه ڏنو ويو </string>
+
+
+    <string name="mnaHeading">Socio-Demographic Information</string>
+    <string name="mna01"> جواب ڏيندڙ جو نالو </string>
+
+
+    <string name="mna02"> جواب ڏيندڙ جي عمر </string>
+
+
+    <string name="mna03"> توهان ڪيترا سال اسڪول ۾ پڙهيا آهيو؟ </string>
+    <string name="mna03a"> اسڪول جو عرصو </string>
+    <string name="mna03b"> نه، فارمل تعليم </string>
+    <string name="mna03c"> مذهبي تعليم </string>
+
+    <string name="mna04"> توهان جو پئشو ڪهڙو آهي؟ </string>
+    <string name="mna04a"> پروفيشنل/ٽيڪنيڪل/انتظامي </string>
+    <string name="mna04b"> ڪلارڪ </string>
+    <string name="mna04c"> خريد و فروخت </string>
+    <string name="mna04d"> تربيت يافته مزدور </string>
+    <string name="mna04e"> غير تربيت يافته مزدور </string>
+    <string name="mna04f"> گھريلو ڪم </string>
+    <string name="mna04g"> زراعت </string>
+    <string name="mna04h"> واپار </string>
+    <string name="mna04i"> ننڌو واپار / دڪان </string>
+    <string name="mna04j"> بيروزگار </string>
+    <string name="mna04k"> ريٽائرڊ </string>
+    <string name="mna04l"> گهريلو عورت </string>
+    <string name="mna04m"> شاگرد </string>
+    <string name="mna04n"> ٻيو ڪجھ وضاحت ڪريو </string>
+
+
+    <string name="mna05"> موجوده ازدواجي حثيت </string>
+    <string name="mna05a"> شادي شده </string>
+    <string name="mna05b"> غيرشادي شده </string>
+    <string name="mna05c"> بيواھ </string>
+    <string name="mna05d"> طلاقيافته </string>
+    <string name="mna05e"> عليحدگي </string>
+
+
+    <string name="mna06"> جيڪڏهن شادي شده آهيو ته توهان جو مڙس ڪيترا سال اسڪول ۾ پڙهيو آهي؟ </string>
+    <string name="mna06a"> اسڪول ۾ مڪمل ڪيل جماعتن جو تعداد </string>
+    <string name="mna06b"> پرائمري تعليم </string>
+    <string name="mna06c"> مذهبي تعليم </string>
+    <string name="mna06d"> خبر ناهي </string>
+
+
+    <string name="mna07"> توهان جي مڙس جو پيشو ڪهڙو آهي؟ </string>
+    <string name="mna07a"> پروفيشنل/ٽيڪنيڪل/انتظامي </string>
+    <string name="mna07b"> ڪلارڪ </string>
+    <string name="mna07c"> خريد و فروخت </string>
+    <string name="mna07d"> تربيت يافته مزدور </string>
+    <string name="mna07e"> غير تربيت يافته مزدور </string>
+    <string name="mna07f"> گھريلو خدمتون </string>
+    <string name="mna07g"> زراعت </string>
+    <string name="mna07h"> واپار </string>
+    <string name="mna07i"> ننڌو واپار / دڪان </string>
+    <string name="mna07j"> بيروزگار </string>
+    <string name="mna07k"> ريٽائرڊ </string>
+    <string name="mna07l"> ٻيو ڪجھ وضاحت ڪريو </string>
+
+
+    <string name="mna08"> توهان جي گهر جي ٽوٽل آمدني ڪيتري آهي؟ ان ۾ سڀني گهر ڀاتين جي سڀني ذريعن ( پگهار ، پنهنجي پيداوار ، ٻين خاندان جي فردن) جي آمدنيءَ کي شامل ڪريو . </string>
+    <string name="mna08a"> روپين ۾ </string>
+    <string name="mna08b"> خبر ناهي </string>
+    <string name="mna08c"> جواب ڏيڻ نه ٿا چاهين </string>
+
+
+    <string name="mna09"> گهر ۾ ڪهڙي ٻولي استعمال ڪئي ويندي آهي؟ </string>
+    <string name="mna09a"> اردو </string>
+    <string name="mna09b"> سنڌي </string>
+    <string name="mna09c"> پنجابي </string>
+    <string name="mna09d"> پشتو </string>
+    <string name="mna09e"> بلوچي </string>
+    <string name="mna09f"> سرائڪي </string>
+    <string name="mna09g"> ٻيو ڪجھ وضاحت ڪريو </string>
+
+
+    <string name="mnb01"> ڇا توهان ڪڏهن ماهواريءَ جي باري ۾ ٻڌو آهي؟ </string>
+    <string name="mnb01a"> ها </string>
+    <string name="mnb01b"> نه </string>
+    <string name="mnb01c"> خبر ناهي </string>
+    <string name="mnb01d"> جواب ڏيڻ نه ٿي چاهيان </string>
+
+    <string name="mnb02"> ڇا توهان جي ماهواري شروع ٿي آهي؟ </string>
+    <string name="mnb02a"> ها </string>
+    <string name="mnb02b"> نه </string>
+    <string name="mnb02c"> خبر ناهي </string>
+    <string name="mnb02d"> جواب ڏيڻ نه ٿي چاهيان </string>
+
+    <string name="mnb03"> جيڪڏهن ها ، ته ڪيتري عمر ۾؟ سالن ۾ لکو </string>
+    <string name="mnb03a"> عمر سالن ۾ </string>
+    <string name="mnb03b"> ياد نه آهي </string>
+    <string name="mnb03c"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb04"> ماهواريءَ وارو رت ڪٿان نڪرندو آهي؟ ( زور سان نه پڙهو ۽ هڪ جواب تي ٽڪ ڪيو) </string>
+    <string name="mnb04a"> ٻچي دانيءَ مان / پيٽ مان </string>
+    <string name="mnb04b"> مونکي خبر ناهي </string>
+    <string name="mnb04c"> مختلف جواب </string>
+    <string name="mnb04d"> ڪو به جواب نه ڏنو ويو </string>
+
+
+    <string name="mnb05"> توهان ڪهڙين جذب ٿيندڙ ڪرڻ وارين شين جي باري ۾ ٻڌو آهي؟
+    (زور سان نه پڙهو ۽ سڀن ٻڌايل جوابن تي ٽڪ ڪيو)
+</string>
+    <string name="mnb05a"> نئون ڪپڙو </string>
+    <string name="mnb05b"> پراڻو ڪپڙو </string>
+    <string name="mnb05c"> ڊسپوزل پيد </string>
+    <string name="mnb05d"> روئي </string>
+    <string name="mnb05e"> ٽشو </string>
+    <string name="mnb05f"> ڪپهه </string>
+    <string name="mnb05g"> ٻيهر استعال ٿيڻ جوڳا پيڊ </string>
+    <string name="mnb05h"> ٻيهر استعال ٿيڻ جوڳا ڪپڙا / ٽروال </string>
+    <string name="mnb05i"> ماهواري ڪپ </string>
+    <string name="mnb05j"> قدرتي طريقا (مٽي،ڍڳي جو ڇيڻو،پتا) </string>
+    <string name="mnb05k"> ٻيو ڪجهه </string>
+    <string name="mnb05l"> ڪو به نه </string>
+    <string name="mnb05m"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb06"> ماهواري ڪنهن کي ايندي آهي؟(زور سان پڙهو) هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnb06a"> بيمار يا زخمي ماڻهن کي </string>
+    <string name="mnb06b"> ر پيدا ڪرڻ واري عمر وارين عورتن کي </string>
+    <string name="mnb06c"> نابالغ ڇوڪرين کي </string>
+    <string name="mnb06d"> جن عورتن کي ٻار آهن انهن کي </string>
+    <string name="mnb06e"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb07"> ماهواري آهي؟(زور سان پڙهو)هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnb07a"> جادو </string>
+    <string name="mnb07b"> قدرتي طريقو </string>
+    <string name="mnb07c"> بيماري </string>
+    <string name="mnb07d"> هڪ راز </string>
+    <string name="mnb07e"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb08"> ڇا ماهواري هيٺين مان ڪا نشاني آهي؟ (زور سان پڙهو) هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnb08a"> ڪجهه غلط ٿيو آهي </string>
+    <string name="mnb08b"> شادي ڪرڻ جي لائق ٿيڻ تي </string>
+    <string name="mnb08c"> اولاد پيدا ڪرڻ جي صلاحيت </string>
+    <string name="mnb08d"> گدلائپ </string>
+    <string name="mnb08e"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb09"> ماهواري اڪثر ڪري ڪڏهن کان شروع ٿيندي آهي؟(زور سان پڙهو)هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnb09a"> پهرئين حمل کان پوءِ </string>
+    <string name="mnb09b"> جڏهن ماڻهو بالغ ٿيندو آهي </string>
+    <string name="mnb09c"> نابالغي جي دوران </string>
+    <string name="mnb09d"> شادي ڪرڻ کانپوءِ </string>
+    <string name="mnb09e"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb10"> ڇا ماهواريءَ جي دوارن ڪجهه شين کان احتياط ڪرڻ گهرجي؟ کليل ۽ هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnb10a"> اسڪول وڃڻ </string>
+    <string name="mnb10b"> گهر کان ٻاهر ڪم ڪرڻ </string>
+    <string name="mnb10c"> وينجھڻ </string>
+    <string name="mnb10d"> رڌ پچاءُ / گهرو ڪم ڪار </string>
+    <string name="mnb10e"> مذهبي اجتماعن ۾ شريڪ ٿيڻ </string>
+    <string name="mnb10f"> رکيل کاڌي کي هٿ لائڻ </string>
+    <string name="mnb10g"> ڇوڪرن سان ڳالهائڻ </string>
+    <string name="mnb10h"> هنن جوابن مان ڪو به نه </string>
+    <string name="mnb10i"> ورزش </string>
+    <string name="mnb10j"> ٻيو ڪجهه </string>
+    <string name="mnb10k"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb11"> ڇا توهان کي خبر آهي ته ماهواري دوران ڪهڙيو علامتون ظاهر ٿين ٿيون؟ (زور سان پڙهو)هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnb11a"> ٿڪاوٽ </string>
+    <string name="mnb11b"> پيٽ ۾ سور </string>
+    <string name="mnb11c"> مٿي ۾ سور </string>
+    <string name="mnb11d"> موڊ خراب ٿيڻ </string>
+    <string name="mnb11e"> مٿيان سڀ جواب </string>
+    <string name="mnb11f"> ڪو به جواب نه ڏنو ويو </string>
+    <string name="mnb11g"> خبر ناهي </string>
+
+    <string name="mnb12"> ماهواري ڇا آهي؟ زور سان نه پڙهو صرف هڪ جواب ٽڪ ڪيو </string>
+    <string name="mnb12a"> ماهواري جي پهرئين ڏينهن جي وقت کان ٻئي ڏينهن تائين </string>
+    <string name="mnb12b"> مختلف جواب </string>
+    <string name="mnb12c"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb13"> توهان کي ماهواري بابت معلومات ڪنهن فراهم ڪئي؟ کليل ۽ هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnb13a"> استاد </string>
+    <string name="mnb13b"> ماءُ </string>
+    <string name="mnb13c"> ڏاڏيءَ </string>
+    <string name="mnb13d"> ڀيڻ </string>
+    <string name="mnb13e"> خاندان جي ڪا به عورت </string>
+    <string name="mnb13f"> دوست </string>
+    <string name="mnb13g"> سرڪاري ڊاڪٽر / هيلٿ ورڪر / مڊوائيف </string>
+    <string name="mnb13h"> انٽرنيٽ </string>
+    <string name="mnb13i"> ٻيو ڪجهه </string>
+    <string name="mnb13j"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnb14"> توهان کي ماهواري متعلق ڪنهن سان مشورو ڪرڻ گهرجي؟ کليل ۽ هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnb14a"> ڪنهن سان به نه </string>
+    <string name="mnb14b"> عورت استاد </string>
+    <string name="mnb14c"> ماءُ </string>
+    <string name="mnb14d"> سهلي </string>
+    <string name="mnb14e"> ڀيڻ </string>
+    <string name="mnb14f"> ڀاڄائي </string>
+    <string name="mnb14g"> ڏاڏي </string>
+    <string name="mnb14h"> ٻي ڪا مائٽياڻي </string>
+    <string name="mnb14i"> هيلٿ ورڪر </string>
+    <string name="mnb14j"> ٻيو ڪو فرد ( وضاحت ڪري) </string>
+    <string name="mnb14k"> ڪو به جواب نه ڏنو ويو </string>
+
+
+
+    <string name="mncHeading">حصو 3:  ماهواريءَ جي متعلق طريقيڪار</string>
+    <string name="mnc03"> ڇا توهان کي موجوده (گذريل سال) ۾ ماهواري آئي؟ </string>
+    <string name="mnc04"> جيڪڏهن نه ته ڪهڙي عمر ۾ ماهواري بند ٿي؟ </string>
+    <string name="mnc05"> وهان ماهواري دوران جذب ڪرڻ لاءِ ڪهڙي شيءَ جو استعمال ڪندا آهيو؟ </string>
+    <string name="mnc05a"> نئون ڪپڙو </string>
+    <string name="mnc05b"> پراڻو ڪپڙو </string>
+    <string name="mnc05c"> ڊسپوزل پيڊ </string>
+    <string name="mnc05d"> روئي </string>
+    <string name="mnc05e"> ٽشو </string>
+    <string name="mnc05f"> ڪپڙو </string>
+    <string name="mnc05g"> ٻيهر استعال ٿيڻ جوڳا پيڊ </string>
+    <string name="mnc05h"> ٻيهر استعال ٿيڻ جوڳا ڪپڙا / ٽروال </string>
+    <string name="mnc05i"> ماهواري ڪپ </string>
+    <string name="mnc05j"> قدرتي شيون ( گپ، پن ۽ ڳئونءَ جو ڇيڻو) </string>
+
+    <string name="mnc06"> توهان استعمال شده شيءَ جو ڇا ڪندا آهيو؟ </string>
+    <string name="mnc06a"> صابڻ سان ڌوئي ان کي ٻيهر استعمال ڪرڻ جي لاءِ رکندا آهيون </string>
+    <string name="mnc06b"> صرف پاڻيءَ سان ڌوئندا آهيون </string>
+    <string name="mnc06c"> ڌوئيندا نه آهيون </string>
+
+
+    <string name="mnc07"> استعمال شده ڊسپوزل شين کي ڇا ڪندا آهيو؟ </string>
+    <string name="mnc07a"> اڇلائي ڇڏيندا آهيون </string>
+    <string name="mnc07b"> ليٽرين ۾ رکندا آهيون </string>
+    <string name="mnc07c"> ڪچري جي دٻي ۾ </string>
+    <string name="mnc07d"> ساڙي ڇڏڻ </string>
+
+    <string name="mnc08"> استعمال ٿيل شين کي ڌوئڻ کانپوءِ ڪٿي سڪائيندا آهيو؟ </string>
+    <string name="mnc08a"> هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnc08b"> سج جي روشني ۾ </string>
+    <string name="mnc08c"> ٻاهر ڇانو ۾ </string>
+    <string name="mnc08d"> اندر اس ۾ </string>
+    <string name="mnc08e"> اند ڇانو ۾ </string>
+    <string name="mnc08f"> ٻئي ڪپڙي ۾ لڪائي </string>
+    <string name="mnc08g"> ٻئي ڪنهن جاءِ تي لڪائي </string>
+
+    <string name="mnc09"> استعمال جي دوران توهان صاف سامان ڪٿي رکندا آهيو؟ </string>
+    <string name="mnc09a"> رکندا ڪونه آهيو </string>
+    <string name="mnc09b"> بند جڳهه تي ( پيتي، الماڙي يا صاف ٿيلهي ۾) </string>
+    <string name="mnc09c"> کليل جڳهه تي ( بستري جي هيٺان) </string>
+
+    <string name="mnc10"> جذب ڪرڻ واريون شيون توهان ڪيترا دفعا استعمال ڪندا آهيو؟ </string>
+    <string name="mnc10a"> هڪ دفعو روزانه </string>
+    <string name="mnc10b"> ٻه دفعا روزانه </string>
+    <string name="mnc10c"> ٽي دفعا يا ان کان وڌيڪ روزانه </string>
+    <string name="mnc10d"> تبديل نه ڪندا آهيو </string>
+
+    <string name="mnc11"> تبديل ڪرڻ جو سبب </string>
+    <string name="mnc11a"> صفائيءَ جي لاءِ </string>
+    <string name="mnc11b"> گهڻو رت وهڻ </string>
+    <string name="mnc11d"> گهٽ معيار جو شيون </string>
+
+    <string name="mnc12"> توهان پنهنجي شرمگاهه کي صاف ڪرڻ جي لاءِ ڇا استعمال ڪندا آهيو؟ </string>
+
+    <string name="mnc13"> ماهواريءَ دوران ڪيترا دفعا وهجندا آهيو؟ </string>
+    <string name="mnc13a"> روزانه </string>
+    <string name="mnc13b"> هر ٻئي ڏينهن </string>
+    <string name="mnc13c"> هر ٽئين ڏينهن </string>
+    <string name="mnc13d"> جڏهن ماهواري ختم ٿيندي آهي </string>
+
+    <string name="mnc14"> ڇا توهان ماهواريءَ جي لاءِ تيار هئا؟ </string>
+    <string name="mnc14a"> نه، ڪا معلومات نه هئي </string>
+    <string name="mnc14b"> ڪجهه معلومات هئي </string>
+    <string name="mnc14c"> معلومات ملڻ جي جڳهه جي خبر هئي </string>
+    <string name="mnc14d"> ھا بھتر طرح سان خبر هئي </string>
+
+    <string name="mnc15"> پهرين ماهواريءَ جي دوران توهان جو ڪهڙو ردعمل هيو؟ </string>
+    <string name="mnc15a"> حيران هيس </string>
+    <string name="mnc15b"> شرمنده هيس </string>
+    <string name="mnc15c"> پريشان هيس </string>
+    <string name="mnc15d"> بيزار هيس </string>
+    <string name="mnc15e"> عام ڳالهه </string>
+    <string name="mnc15f"> ڊنل هيس </string>
+    <string name="mnc15g"> پرجوش ۽ خوش هيس </string>
+
+    <string name="mnc16"> ڇا توهان جي نظر ۾ اهڙا کاڌا آهين جيڪي ماهواري دوران عورت کي نه کائڻ گهرجن؟ </string>
+    <string name="mnc17"> جيڪڏهن ها ته، اهي ڪهڙا آهن؟ </string>
+
+    <string name="mneHeading">حصو 5: پاڻي</string>
+    <string name="mne01"> توهان جي گهر ۾ گهرڀاتين ۾ پيئڻ جي پاڻي جو اهم ذريعوڪهڙو آهي؟ </string>
+    <string name="mne01a"> گهر جو نلڪو </string>
+    <string name="mne01b"> ٻاهريون نلڪو </string>
+    <string name="mne01c"> گهٽي ۾ لڳل نلڪو </string>
+    <string name="mne01d"> ٽيوب ويل </string>
+    <string name="mne01e"> نلڪو </string>
+    <string name="mne01f"> ڍڪيل کوهه </string>
+    <string name="mne01g"> اڻ ڍڪيل کوهه </string>
+    <string name="mne01h"> محفوظ چشمو </string>
+    <string name="mne01i"> غير محفوظ چشمو </string>
+    <string name="mne01j"> برساتي پاڻي </string>
+    <string name="mne01k"> ٽينڪر يا ٽرڪ </string>
+    <string name="mne01l"> فلٽر ٿيل پاڻي </string>
+    <string name="mne01m"> ريڙهي واري ٽانڪي </string>
+    <string name="mne01n"> زميني سطح وارو پاڻي (ندي، ڊيم، ڍنڍ ، تلا، وهندڙ پاڻي، ڪينال </string>
+    <string name="mne01o"> گهگهي وارو پاڻي </string>
+
+    <string name="mne02"> ڇا گذريل 6 مهينن ۾ توهان جي گهر کي اهم ذريعي مان پاڻيء جي فراهمي معطل ٿي؟ </string>
+    <string name="mne03"> پاڻيءَ جي اهم ذريعي مان معطليءَ دوران ڪيترا ڏينهن پاڻي موجود نه هيو؟ </string>
+    <string name="mne04"> توهان جي گهر ۾ ٻين ڪم ڪارين جهڙوڪ رڌ پچاءُ ، هٿن ڌوئڻ جي لاءِ استعمال ٿيندڙ پاڻيءَ جو اهم ذريعو ڪهڙوآهي؟ </string>
+    <string name="mne04a"> گهر جو نلڪو </string>
+    <string name="mne04b"> گهر جو نلڪو </string>
+    <string name="mne04c"> گهٽي ۾ لڳل نلڪو </string>
+    <string name="mne04d"> ٽيوب ويل </string>
+    <string name="mne04e"> نلڪو </string>
+    <string name="mne04f"> ڍڪيل کوهه </string>
+    <string name="mne04g"> اڻ ڍڪيل کوهه </string>
+    <string name="mne04h"> محفوظ چشمو </string>
+    <string name="mne04i"> غير محفوظ چشمو </string>
+    <string name="mne04j"> برساتي پاڻي </string>
+    <string name="mne04k"> ٽينڪر يا ٽرڪ </string>
+    <string name="mne04l"> فلٽر ٿيل پاڻي </string>
+    <string name="mne04m"> ريڙهي واري ٽانڪي </string>
+    <string name="mne04n"> زميني سطح وارو پاڻي (ندي، ڊيم، ڍنڍ ، تلا، وهندڙ پاڻي، ڪينال </string>
+    <string name="mne04o"> گهگهي وارو پاڻي </string>
+
+    <string name="mne05"> پاڻيءَجي اهم ذريعي تائين پهچڻ، پاڻي حاصل ڪرڻ ۽ کڻي اچڻ ۾ ڪيترو وقت لڳندو آهي؟ </string>
+    <string name="mne05a"> منٽن ۾ </string>
+    <string name="mne05b"> گھر ۾ موجود آهي / گهر ۾ پهچايو ويندو آهي </string>
+
+    <string name="mne06"> ڇا توهان پنهنجي پاڻيءَ کي صاف ڪندا آهيو ڪنهن به طريقي سان جيئين اهو پيئڻ لاءِ محفوظ ۽ بهتر ٿئي </string>
+
+    <string name="mne07"> پيئڻ جي پاڻي کي صاف ڪرڻ لاءِ توهان اڪثر ڪري ڪهڙو طريقو استعمال ڪندا آهيو؟ </string>
+    <string name="mne07a"> اٻارڻ </string>
+    <string name="mne07b"> بليچ يا ڪلورين شامل ڪرڻ </string>
+    <string name="mne07c"> ڪپڙي سان ڇاڻي </string>
+    <string name="mne07d"> منرل وٽر واري بوتل </string>
+    <string name="mne07e"> ٻاڻي فلٽر استعمال ڪندا آهيون </string>
+    <string name="mne07f"> (ٺڪر،ريت،جامع وغيره) </string>
+    <string name="mne07g"> اس تي رکڻ </string>
+    <string name="mne07h"> آٺرائڻ </string>
+    <string name="mne07i"> ڦٽڪي جو استعال </string>
+
+    <string name="mndHeading">حصو 4:  صفائيءَ وارين شين تائين پهچ</string>
+    <string name="mnd01">توهان ڪهڙي جذب ٿيڻ واري شيءَ جي استعمال کي ترجيح ڏيندا جيڪڏهن توهان جي مرضيءَ تي هجي ته؟</string>
+    <string name="mnd01a">نئون ڪپڙو</string>
+    <string name="mnd01b">پراڻو ڪپڙو</string>
+    <string name="mnd01c">ڊسپوزل پيڊ</string>
+    <string name="mnd01d">روئي</string>
+    <string name="mnd01e">ٽشو</string>
+    <string name="mnd01f">ڪپڙو</string>
+    <string name="mnd01g">ٻيهر استعال ٿيڻ جوڳا پيڊ</string>
+    <string name="mnd01h">ٻيهر استعال ٿيڻ جوڳا ڪپڙا / ٽروال</string>
+    <string name="mnd01i">ماهواري ڪپ</string>
+    <string name="mnd01j">قدرتي شيون ( گپ، پن ۽ ڳئونءَ جو ڇيڻو)</string>
+
+    <string name="mnd02"> بازار ۾ ڪهڙيون شيون موجود آهن؟ </string>
+    <string name="mnd02a"> نئون ڪپڙو </string>
+    <string name="mnd02b"> پراڻو ڪپڙو </string>
+    <string name="mnd02c"> ڊسپوزل پيڊ </string>
+    <string name="mnd02d"> روئي </string>
+    <string name="mnd02e"> ٽشو </string>
+    <string name="mnd02f"> ڪپڙو </string>
+    <string name="mnd02g"> ٻيهر استعال ٿيڻ جوڳا پيڊ </string>
+    <string name="mnd02h"> ٻيهر استعال ٿيڻ جوڳا ڪپڙا / ٽروال </string>
+    <string name="mnd02i"> ماهواري ڪپ </string>
+    <string name="mnd02j"> قدرتي شيون ( گپ، پن ۽ ڳئونءَ جو ڇيڻو) </string>
+
+    <string name="mnd03"> ڇا توهان قابل ترڪ شيون خريد ڪرڻ جي وسعت رکو ٿا؟ </string>
+    <string name="mnd03a"> ها </string>
+    <string name="mnd03b"> نه </string>
+    <string name="mnd03c"> ڪو به جواب نه ڏنو ويو </string>
+
+
+    <string name="mnd04"> ڇاتوهان کي خبر آهي ته بار بار استعمال ٿيندڙ پيڊ ڪيئن تيار ڪبا آهي؟ </string>
+    <string name="mnd04a"> ها </string>
+    <string name="mnd04b"> نه </string>
+    <string name="mnd04c"> ڪو به جواب نه ڏنو ويو </string>
+
+    <string name="mnd05"> جيڪڏهن نه ته، ڇا توهان بار بار استعمال ٿيندڙ سامان ٺاهڻ ۾ دلچسپي رکو ٿا ؟ جيڪڏهن توهان کي ٺاهڻ سيکارجي ته ؟ </string>
+    <string name="mnd05a"> ها </string>
+    <string name="mnd05b"> نه </string>
+    <string name="mnd05c"> ڪو به جواب نه ڏنو ويو </string>
 
     <!--Form 01-->
 

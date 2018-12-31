@@ -34,7 +34,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".ui.LoginActivity"
@@ -61,7 +60,7 @@
             android:name=".ui.Form01Enrolment"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
-
+        <activity android:name=".ui.Section2Activity"></activity>
     </application>
 
 </manifest>
