@@ -249,84 +249,88 @@
     <string name="mnb14k"> ڪو به جواب نه ڏنو ويو </string>
 
 
-
     <string name="mncHeading">حصو 3:  ماهواريءَ جي متعلق طريقيڪار</string>
-    <string name="mnc03"> ڇا توهان کي موجوده (گذريل سال) ۾ ماهواري آئي؟ </string>
-    <string name="mnc04"> جيڪڏهن نه ته ڪهڙي عمر ۾ ماهواري بند ٿي؟ </string>
-    <string name="mnc05"> وهان ماهواري دوران جذب ڪرڻ لاءِ ڪهڙي شيءَ جو استعمال ڪندا آهيو؟ </string>
-    <string name="mnc05a"> نئون ڪپڙو </string>
-    <string name="mnc05b"> پراڻو ڪپڙو </string>
-    <string name="mnc05c"> ڊسپوزل پيڊ </string>
-    <string name="mnc05d"> روئي </string>
-    <string name="mnc05e"> ٽشو </string>
-    <string name="mnc05f"> ڪپڙو </string>
-    <string name="mnc05g"> ٻيهر استعال ٿيڻ جوڳا پيڊ </string>
-    <string name="mnc05h"> ٻيهر استعال ٿيڻ جوڳا ڪپڙا / ٽروال </string>
-    <string name="mnc05i"> ماهواري ڪپ </string>
-    <string name="mnc05j"> قدرتي شيون ( گپ، پن ۽ ڳئونءَ جو ڇيڻو) </string>
+    <string name="mnc01"> ڇا توهان کي موجوده (گذريل سال) ۾ ماهواري آئي؟ </string>
+    <string name="mnc02"> جيڪڏهن نه ته ڪهڙي عمر ۾ ماهواري بند ٿي؟ </string>
+    <string name="mnc03"> وهان ماهواري دوران جذب ڪرڻ لاءِ ڪهڙي شيءَ جو استعمال ڪندا آهيو؟ </string>
+    <string name="mnc03a"> نئون ڪپڙو </string>
+    <string name="mnc03b"> پراڻو ڪپڙو </string>
+    <string name="mnc03c"> ڊسپوزل پيڊ </string>
+    <string name="mnc03d"> روئي </string>
+    <string name="mnc03e"> ٽشو </string>
+    <string name="mnc03f"> ڪپڙو </string>
+    <string name="mnc03g"> ٻيهر استعال ٿيڻ جوڳا پيڊ </string>
+    <string name="mnc03h"> ٻيهر استعال ٿيڻ جوڳا ڪپڙا / ٽروال </string>
+    <string name="mnc03i"> ماهواري ڪپ </string>
+    <string name="mnc03j"> قدرتي شيون ( گپ، پن ۽ ڳئونءَ جو ڇيڻو) </string>
 
-    <string name="mnc06"> توهان استعمال شده شيءَ جو ڇا ڪندا آهيو؟ </string>
-    <string name="mnc06a"> صابڻ سان ڌوئي ان کي ٻيهر استعمال ڪرڻ جي لاءِ رکندا آهيون </string>
-    <string name="mnc06b"> صرف پاڻيءَ سان ڌوئندا آهيون </string>
-    <string name="mnc06c"> ڌوئيندا نه آهيون </string>
+    <string name="mnc04"> توهان استعمال شده شيءَ جو ڇا ڪندا آهيو؟ </string>
+    <string name="mnc04a"> صابڻ سان ڌوئي ان کي ٻيهر استعمال ڪرڻ جي لاءِ رکندا آهيون </string>
+    <string name="mnc04b"> صرف پاڻيءَ سان ڌوئندا آهيون </string>
+    <string name="mnc04c"> ڌوئيندا نه آهيون </string>
 
 
-    <string name="mnc07"> استعمال شده ڊسپوزل شين کي ڇا ڪندا آهيو؟ </string>
-    <string name="mnc07a"> اڇلائي ڇڏيندا آهيون </string>
-    <string name="mnc07b"> ليٽرين ۾ رکندا آهيون </string>
-    <string name="mnc07c"> ڪچري جي دٻي ۾ </string>
-    <string name="mnc07d"> ساڙي ڇڏڻ </string>
+    <string name="mnc05"> استعمال شده ڊسپوزل شين کي ڇا ڪندا آهيو؟ </string>
+    <string name="mnc05a"> اڇلائي ڇڏيندا آهيون </string>
+    <string name="mnc05b"> ليٽرين ۾ رکندا آهيون </string>
+    <string name="mnc05c"> ڪچري جي دٻي ۾ </string>
+    <string name="mnc05d"> ساڙي ڇڏڻ </string>
 
-    <string name="mnc08"> استعمال ٿيل شين کي ڌوئڻ کانپوءِ ڪٿي سڪائيندا آهيو؟ </string>
-    <string name="mnc08a"> هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
-    <string name="mnc08b"> سج جي روشني ۾ </string>
-    <string name="mnc08c"> ٻاهر ڇانو ۾ </string>
-    <string name="mnc08d"> اندر اس ۾ </string>
-    <string name="mnc08e"> اند ڇانو ۾ </string>
-    <string name="mnc08f"> ٻئي ڪپڙي ۾ لڪائي </string>
-    <string name="mnc08g"> ٻئي ڪنهن جاءِ تي لڪائي </string>
+    <string name="mnc06"> استعمال ٿيل شين کي ڌوئڻ کانپوءِ ڪٿي سڪائيندا آهيو؟ </string>
+    <string name="mnc06a"> هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
+    <string name="mnc06b"> سج جي روشني ۾ </string>
+    <string name="mnc06c"> ٻاهر ڇانو ۾ </string>
+    <string name="mnc06d"> اندر اس ۾ </string>
+    <string name="mnc06e"> اند ڇانو ۾ </string>
+    <string name="mnc06f"> ٻئي ڪپڙي ۾ لڪائي </string>
+    <string name="mnc06g"> ٻئي ڪنهن جاءِ تي لڪائي </string>
 
-    <string name="mnc09"> استعمال جي دوران توهان صاف سامان ڪٿي رکندا آهيو؟ </string>
-    <string name="mnc09a"> رکندا ڪونه آهيو </string>
-    <string name="mnc09b"> بند جڳهه تي ( پيتي، الماڙي يا صاف ٿيلهي ۾) </string>
-    <string name="mnc09c"> کليل جڳهه تي ( بستري جي هيٺان) </string>
+    <string name="mnc07"> استعمال جي دوران توهان صاف سامان ڪٿي رکندا آهيو؟ </string>
+    <string name="mnc07a"> رکندا ڪونه آهيو </string>
+    <string name="mnc07b"> بند جڳهه تي ( پيتي، الماڙي يا صاف ٿيلهي ۾) </string>
+    <string name="mnc07c"> کليل جڳهه تي ( بستري جي هيٺان) </string>
 
-    <string name="mnc10"> جذب ڪرڻ واريون شيون توهان ڪيترا دفعا استعمال ڪندا آهيو؟ </string>
-    <string name="mnc10a"> هڪ دفعو روزانه </string>
-    <string name="mnc10b"> ٻه دفعا روزانه </string>
-    <string name="mnc10c"> ٽي دفعا يا ان کان وڌيڪ روزانه </string>
-    <string name="mnc10d"> تبديل نه ڪندا آهيو </string>
+    <string name="mnc08"> جذب ڪرڻ واريون شيون توهان ڪيترا دفعا استعمال ڪندا آهيو؟ </string>
+    <string name="mnc08a"> هڪ دفعو روزانه </string>
+    <string name="mnc08b"> ٻه دفعا روزانه </string>
+    <string name="mnc08c"> ٽي دفعا يا ان کان وڌيڪ روزانه </string>
+    <string name="mnc08d"> تبديل نه ڪندا آهيو </string>
 
-    <string name="mnc11"> تبديل ڪرڻ جو سبب </string>
-    <string name="mnc11a"> صفائيءَ جي لاءِ </string>
-    <string name="mnc11b"> گهڻو رت وهڻ </string>
-    <string name="mnc11d"> گهٽ معيار جو شيون </string>
+    <string name="mnc09"> تبديل ڪرڻ جو سبب </string>
+    <string name="mnc09a"> صفائيءَ جي لاءِ </string>
+    <string name="mnc09b"> گهڻو رت وهڻ </string>
+    <string name="mnc09c"> گهٽ معيار جو شيون </string>
 
-    <string name="mnc12"> توهان پنهنجي شرمگاهه کي صاف ڪرڻ جي لاءِ ڇا استعمال ڪندا آهيو؟ </string>
+    <string name="mnc10"> توهان پنهنجي شرمگاهه کي صاف ڪرڻ جي لاءِ ڇا استعمال ڪندا آهيو؟ </string>
+    <string name="mnc10a"> ڪجهه به نه</string>
+    <string name="mnc10b"> صرف پاڻي </string>
+    <string name="mnc10c"> صابڻ ۽ پاڻي </string>
+    <string name="mnc10d"> ٽشو يا سادو پنو  </string>
+    <string name="mnc10e">ڪپڙو </string>
 
-    <string name="mnc13"> ماهواريءَ دوران ڪيترا دفعا وهجندا آهيو؟ </string>
-    <string name="mnc13a"> روزانه </string>
-    <string name="mnc13b"> هر ٻئي ڏينهن </string>
-    <string name="mnc13c"> هر ٽئين ڏينهن </string>
-    <string name="mnc13d"> جڏهن ماهواري ختم ٿيندي آهي </string>
+    <string name="mnc11"> ماهواريءَ دوران ڪيترا دفعا وهجندا آهيو؟ </string>
+    <string name="mnc11a"> روزانه </string>
+    <string name="mnc11b"> هر ٻئي ڏينهن </string>
+    <string name="mnc11c"> هر ٽئين ڏينهن </string>
+    <string name="mnc11d"> جڏهن ماهواري ختم ٿيندي آهي </string>
 
-    <string name="mnc14"> ڇا توهان ماهواريءَ جي لاءِ تيار هئا؟ </string>
-    <string name="mnc14a"> نه، ڪا معلومات نه هئي </string>
-    <string name="mnc14b"> ڪجهه معلومات هئي </string>
-    <string name="mnc14c"> معلومات ملڻ جي جڳهه جي خبر هئي </string>
-    <string name="mnc14d"> ھا بھتر طرح سان خبر هئي </string>
+    <string name="mnc12"> ڇا توهان ماهواريءَ جي لاءِ تيار هئا؟ </string>
+    <string name="mnc12a"> نه، ڪا معلومات نه هئي </string>
+    <string name="mnc12b"> ڪجهه معلومات هئي </string>
+    <string name="mnc12c"> معلومات ملڻ جي جڳهه جي خبر هئي </string>
+    <string name="mnc12d"> ھا بھتر طرح سان خبر هئي </string>
 
-    <string name="mnc15"> پهرين ماهواريءَ جي دوران توهان جو ڪهڙو ردعمل هيو؟ </string>
-    <string name="mnc15a"> حيران هيس </string>
-    <string name="mnc15b"> شرمنده هيس </string>
-    <string name="mnc15c"> پريشان هيس </string>
-    <string name="mnc15d"> بيزار هيس </string>
-    <string name="mnc15e"> عام ڳالهه </string>
-    <string name="mnc15f"> ڊنل هيس </string>
-    <string name="mnc15g"> پرجوش ۽ خوش هيس </string>
+    <string name="mnc13"> پهرين ماهواريءَ جي دوران توهان جو ڪهڙو ردعمل هيو؟ </string>
+    <string name="mnc13a"> حيران هيس </string>
+    <string name="mnc13b"> شرمنده هيس </string>
+    <string name="mnc13c"> پريشان هيس </string>
+    <string name="mnc13d"> بيزار هيس </string>
+    <string name="mnc13e"> عام ڳالهه </string>
+    <string name="mnc13f"> ڊنل هيس </string>
+    <string name="mnc13g"> پرجوش ۽ خوش هيس </string>
 
-    <string name="mnc16"> ڇا توهان جي نظر ۾ اهڙا کاڌا آهين جيڪي ماهواري دوران عورت کي نه کائڻ گهرجن؟ </string>
-    <string name="mnc17"> جيڪڏهن ها ته، اهي ڪهڙا آهن؟ </string>
+    <string name="mnc14"> ڇا توهان جي نظر ۾ اهڙا کاڌا آهين جيڪي ماهواري دوران عورت کي نه کائڻ گهرجن؟ </string>
+    <string name="mnc15"> جيڪڏهن ها ته، اهي ڪهڙا آهن؟ </string>
 
     <string name="mneHeading">حصو 5: پاڻي</string>
     <string name="mne01"> توهان جي گهر ۾ گهرڀاتين ۾ پيئڻ جي پاڻي جو اهم ذريعوڪهڙو آهي؟ </string>
