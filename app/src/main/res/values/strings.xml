@@ -31,6 +31,8 @@
     <string name="month"> مهينا </string>
     <string name="year"> سال </string>
     <string name="day"> دن </string>
+    <string name="none">ڪو به نه </string>
+    <string name="noanswer">ڪو به جواب نه ڏنو ويو </string>
 
     <string name="tap">ڌڪ</string>
     <string name="knock">کڙڪائڻ</string>
@@ -345,6 +347,11 @@
     <string name="mne01o"> گهگهي وارو پاڻي </string>
 
     <string name="mne02"> ڇا گذريل 6 مهينن ۾ توهان جي گهر کي اهم ذريعي مان پاڻيء جي فراهمي معطل ٿي؟ </string>
+
+
+    <string name="mne02b"> گھر ۾ موجود آهي / گهر ۾ پهچايو ويندو آهي </string>
+    <string name="mne02c"> خبر ناهي </string>
+
     <string name="mne03"> پاڻيءَ جي اهم ذريعي مان معطليءَ دوران ڪيترا ڏينهن پاڻي موجود نه هيو؟ </string>
     <string name="mne04"> توهان جي گهر ۾ ٻين ڪم ڪارين جهڙوڪ رڌ پچاءُ ، هٿن ڌوئڻ جي لاءِ استعمال ٿيندڙ پاڻيءَ جو اهم ذريعو ڪهڙوآهي؟ </string>
     <string name="mne04a"> گهر جو نلڪو </string>
@@ -516,6 +523,7 @@
     <string name="ls01f10c05"> مامو </string>
     <string name="ls01f10c06"> نڳو پيءُ </string>
     <string name="ls01f10c07"> ٻيو ڪجهه، مهرباني واضع ڪريو </string>
+
 
     <!--Info-->
     <string name="lsid1"> ٻار جي آڊي</string>
