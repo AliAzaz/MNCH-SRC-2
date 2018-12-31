@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">LEAPS Scale up</string>
+
+    <!--copied Strings for splash, login and main screen-->
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+
+    <string name="seconds">Seconds</string>
+    <string name="yes"> ھا </string>
+    <string name="no"> نہ </string>
+    <string name="dkn"> خبر نه آھي </string>
+    <string name="not_applicable">	غير موضوع</string>
+    <string name="sometimes">	ڪڏهن ڪڏهن   </string>
+
+    <string name="correct"> صحيح </string>
+    <string name="incorrect"> غلط </string>
+    <string name="nores"> جواب نه ڏنو </string>
+    <string name="skp"> ڇڏي ڏنو </string>
+
+    <string name="almostN">ڪڏهن به نه</string>
+    <string name="some">ڪڏهن ڪڏهن</string>
+    <string name="often">اڪثر ڪري</string>
+    <string name="almostA">هميشه</string>
+
+    <string name="other"> ٻيو ڪجھ </string>
+    <string name="month"> مهينا </string>
+    <string name="year"> سال </string>
+    <string name="day"> دن </string>
+
+    <string name="tap">ڌڪ</string>
+    <string name="knock">کڙڪائڻ</string>
+    <string name="ignore">نظر انداز / انڪار</string>
+
+    <string name="pdeviation">ڇا پروجيڪٽ ڊيويشن فارم جي ضرورت آهي. </string>
+    <string name="istatus">انٹروہو کا نتیجہ</string>
+    <string name="istatusa">مکمل</string>
+    <string name="istatusb">نا مکمل</string>
+    <string name="istatusc">انکار کردیا</string>
+    <string name="istatusd">گھر بند ہے</string>
+    <string name="nextSection">ايندڙ سيڪشن</string>
+    <string name="end_interview">ختم ڪيو</string>
+    <string name="addMember">افراد کا اندراج</string>
+
+    <!--Form 01-->
+
+    <string name="ls01instruction"> هدايتون؛
+    هي فارم CCDA پاپوليشن سروي ۾ داخل ٿيندڙ هر ٻار جي لاءِ مڪمل ڪندي.
+    هي فارم تڏهن ئي مڪمل ڪريو جڏهن اجازت ملي ۽ راضي نامي تي صحيح ٿيل هجي.
+    پراجيڪٽ ڊيويئشن ارم مڪمل ڪريو جيڪڏهن فارم پرٽوڪول کان هٽي ڪري مڪمل ڪيو ويو هجي.</string>
+    <string name="ls01aheading"> Section A. Interview Details </string>
+    <string name="ls01a01"> انٽرويو جي تاريخ </string>
+    <string name="ls01a02"> اسسير جو نالو ۽ ذات </string>
+    <string name="ls01a03"> اسيسر جي ID </string>
+    <string name="ls01a04"> ٻار جي ID </string>
+    <string name="ls01a05"> ڳوٺ جي ID </string>
+    <string name="ls01a06"> ضلعو ۽ ID </string>
+    <string name="ls01a07"> سروي رائونڊ نمبر </string>
+    <string name="ls01a07a"> بيس لائين </string>
+    <string name="ls01a07b"> اسٽيپ 1 </string>
+    <string name="ls01a07c"> اسٽيپ 2 </string>
+    <string name="ls01a07d"> اسٽيپ 3 </string>
+    <string name="ls01a08"> چا ٻار جواڳ  ۾ ٽيسٽ  ٿيو آهي؟ </string>
+    <string name="ls01a09"> جيڪڏهن ٻار پهريان اسيس ٿيو آهي ته ڪهڙي رائونڊ ۾؟ </string>
+    <string name="ls01a09a"> بيس لائين </string>
+    <string name="ls01a09b"> اسٽيپ 1 </string>
+    <string name="ls01a09c"> اسٽيپ 2 </string>
+    <string name="ls01a09d"> اسٽيپ 3 </string>
+    <string name="ls01a10"> پراجيڪٽ ۾ انرولمينٽ جي تاريخ </string>
+    <string name="ls01a11"> انٽرويو ڏيندڙ جو نالو ۽ ذات </string>
+    <string name="ls01a12"> ٻار سان رشتو </string>
+    <string name="ls01a12a"> ماءَ </string>
+    <string name="ls01a12b"> پيءَ </string>
+    <string name="ls01a12c"> ڏاڏي </string>
+    <string name="ls01a12d"> ڏاڏو </string>
+    <string name="ls01a12e"> چاچي/ڦڦي/خالا </string>
+    <string name="ls01a12f"> چاچو/مامو </string>
+    <string name="ls01bheading"> Section B. Address </string>
+    <string name="ls01b01"> تعلقو </string>
+    <string name="ls01b02"> يونين ڪائونسل </string>
+    <string name="ls01b03"> ڳوٺ جو نالو </string>
+    <string name="ls01cheading"> گھر جو سربراه </string>
+    <string name="ls01c01"> گھر جي سربراه جو نالو ۽ ذات </string>
+    <string name="ls01dheading"> فون نمبر </string>
+    <string name="ls01d01"> فون واري جو نالو </string>
+    <string name="ls01d02"> فون نمبر </string>
+    <string name="ls01eheading"> صحت ۽ اسڪول جي معلومات </string>
+    <string name="ls01e01"> هيلٿ ورڪر جو نالو </string>
+    <string name="ls01e02"> هيلٿ ورڪر جي ID </string>
+    <string name="ls01e03"> فيڊر اسڪول ٽيچر جو نالو ۽ ذات </string>
+    <string name="ls01e04"> فيڊر اسڪول ٽيچر جي ID </string>
+    <string name="ls01fheading"> داخل ٻار جي معلومات </string>
+    <string name="ls01f01"> ٻار جو نالو (پهريون نالو ۽ عرف نالو) </string>
+    <string name="ls01f02"> ٻار جي جنس </string>
+    <string name="ls01f02a"> ڇوڪرو </string>
+    <string name="ls01f02b"> ڇوڪري </string>
+    <string name="ls01f03"> ڄم جي تاريخ </string>
+    <string name="ls01f04"> عمر جو ثبوت (ڄم سريٽيفڪيٽ، ٽڪن وارو ڪارڊ) </string>
+    <string name="ls01f05"> عمر </string>
+    <string name="ls01f06a"> ڇا انٽرويو ڏيندڙ ٻار جي ماءَ يا سنڀاليندڙ آهي؟ </string>
+    <string name="ls01f06b"> ماءَ يا سنڀاليندڙ نالو ۽ ذات </string>
+    <string name="ls01f07a"> ڇا انٽرويو ڏيندڙ ٻار جي سڳي ماءَ آهي؟ </string>
+    <string name="ls01f07b"> جيڪڏهن ماءَ نه آهي ته سنڀاليندڙ جو ٻار سان رشتو </string>
+    <string name="ls01f07b01"> ويڳي ماءَ </string>
+    <string name="ls01f07b02"> ناني </string>
+    <string name="ls01f07b03"> ڏاڏي </string>
+    <string name="ls01f07b04"> ماسي </string>
+    <string name="ls01f07b05"> ڦڦي </string>
+    <string name="ls01f07b06"> وڏي ڀيڻ </string>
+    <string name="ls01f07c"> جيڪڏهن سارسنڀال ڪندڙَ وڏا ڀاءُ ڀيڻ آهن ته اُن جي عمر ڇا آهي؟ </string>
+    <string name="ls01f07d"> جيڪڏهن ماءَ نه آهي ته ان جو سبب ڇا آهي؟ </string>
+    <string name="ls01f07d01"> ماءَ گذاري وئي آهي </string>
+    <string name="ls01f07d02"> الهدگي يا طلاق </string>
+    <string name="ls01f07d03"> ٻار کي گود ڏنو ويو </string>
+    <string name="ls01f07d04"> ماءَ گھر کان ٻاهر ڪم ڪندي آهي </string>
+    <string name="ls01f07d05"> ماءَ بيمار آهي </string>
+    <string name="ls01f08"> ٻيا سارسنڀال ڪندڙ ڪير آهن جيڪي ٻار کي سنڀالڻ ۾ مدد ڪندا آهن؟ </string>
+    <string name="ls01f08a"> ماءُ </string>
+    <string name="ls01f08b"> ناني </string>
+    <string name="ls01f08c"> ڏاڏي </string>
+    <string name="ls01f08d"> ماسي </string>
+    <string name="ls01f08e"> پڦي </string>
+    <string name="ls01f08f"> واڏا ڀاءُ ڀيڻ </string>
+    <string name="ls01f08g"> ڪو به نه آهي </string>
+    <string name="ls01f08h"> پيءَ </string>
+    <string name="ls01f08i"> ٻيو ڪو، جيڪڏهن ٻيو نالو آهي ته لکو </string>
+    <string name="ls01f09"> پيءَ جو نالو (نالو ۽ ذات) </string>
+    <string name="ls01f10a"> ڇا ٻار جي زندگي ۾ پيءَ موجود آهي؟ </string>
+    <string name="ls01f10b"> جيڪڏهن پيءَ ٻار جي زندگي ۾ موجود نه آهي ته سبب لکو. </string>
+    <string name="ls01f10b01"> فوت </string>
+    <string name="ls01f10b02"> طلاق </string>
+    <string name="ls01f10c"> ٻار کي سڀ کان وڌيڪ خرچ ڏيندڙ ڪير آهي؟ </string>
+    <string name="ls01f10c01"> ماءُ </string>
+    <string name="ls01f10c02"> ڏاڏو </string>
+    <string name="ls01f10c03"> نانو </string>
+    <string name="ls01f10c04"> چاچو </string>
+    <string name="ls01f10c05"> مامو </string>
+    <string name="ls01f10c06"> نڳو پيءُ </string>
+    <string name="ls01f10c07"> ٻيو ڪجهه، مهرباني واضع ڪريو </string>
+
+    <!--Info-->
+    <string name="lsid1"> ٻار جي آڊي</string>
+    <string name="lsid2"> ڪلسٽر جي آڊي</string>
+    <string name="lsid3"> ضلعو</string>
+    <string name="lsid4"> ٻا ر جو نالو ءِ ذات</string>
+    <string name="lsid5"> ٽيسٽ جي تاريخ</string>
+    <string name="lsid6"> ٻار جي ڄمڻ جي تاريخ</string>
+    <string name="lsid7"> ٻار جي عمر</string>
+    <string name="lsid8"> ٽيسٽ ڪندڙ جو نالو</string>
+    <string name="lsid9"> ٽيسٽ ڪندڙ جي ID</string>
+    <string name="lsid10"> سروي رائونڊ نمبر</string>
+    <string name="lsid11"> سروي جو قسم</string>
+    <string name="lsid12"> جيڪڏهن ٻار پاپوليشن سروي ۾ آهي ته ڇا پهريان اسيس ٿيو آهي؟</string>
+    <string name="lsid13"> جيڪڏهن ٻار پهريان اسيس ٿيو آهي ته ڪهڙي رائونڊ ۾؟</string>
+    <string name="lsid14"> جائزي ۾ داخلا جي تاريخ</string>
+    <string name="lsid10a"> بيس لائين </string>
+    <string name="lsid10b"> اسٽيپ 1 </string>
+    <string name="lsid10c"> اسٽيپ 2 </string>
+    <string name="lsid10d"> اسٽيپ 3 </string>
+    <string name="lsid11a"> پاپوليشن سروي </string>
+    <string name="lsid11b"> اسڪول ڪوهارٽ </string>
+    <string name="lsid13a"> بيس لائين </string>
+    <string name="lsid13b"> اسٽيپ 1 </string>
+    <string name="lsid13c"> اسٽيپ 2 </string>
+    <string name="lsid13d"> اسٽيپ 3 </string>
+
+
+</resources>
+
+
+
