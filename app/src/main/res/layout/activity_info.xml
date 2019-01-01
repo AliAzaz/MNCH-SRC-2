@@ -152,7 +152,8 @@
                             android:id="@+id/mna0301"
                             style="@style/EditText_number"
                             android:hint="@string/mna0301"
-                            android:maxLength="2" />
+                            android:maxLength="2"
+                            android:tag="" />
 
                         <RadioGroup
                             android:id="@+id/mna03"
@@ -350,7 +351,8 @@
                                 android:id="@+id/mna0601"
                                 style="@style/EditText_number"
                                 android:hint="@string/mna0601"
-                                android:maxLength="2" />
+                                android:maxLength="2"
+                                android:tag="" />
 
                             <RadioGroup
                                 android:id="@+id/mna06"
@@ -494,7 +496,8 @@
                             android:id="@+id/mna0801"
                             style="@style/EditText_number"
                             android:hint="@string/mna0801"
-                            android:maxLength="2" />
+                            android:maxLength="2"
+                            android:tag="" />
 
                         <RadioGroup
                             android:id="@+id/mna08"

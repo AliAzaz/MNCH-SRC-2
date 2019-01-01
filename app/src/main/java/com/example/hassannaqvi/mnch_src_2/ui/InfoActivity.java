@@ -11,6 +11,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.text.format.DateFormat;
 import android.util.Log;
+import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -63,15 +64,27 @@ public class InfoActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (bi.mna0301.getText().toString().isEmpty())
+                if (bi.mna0301.getText().toString().isEmpty()) {
                     ClearClass.ClearRadioButton(bi.mna03, true);
-                else
+                    bi.mna0301.setTag("-1");
+                } else {
                     ClearClass.ClearRadioButton(bi.mna03, false);
+
+                    bi.mna0301.setTag("");
+                }
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
 
+            }
+        });
+
+        bi.mna03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (bi.mna03a.isChecked() || bi.mna03b.isChecked())
+                    bi.mna0301.setTag("-1");
             }
         });
 
@@ -93,15 +106,27 @@ public class InfoActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (bi.mna0601.getText().toString().isEmpty())
+                if (bi.mna0601.getText().toString().isEmpty()) {
                     ClearClass.ClearRadioButton(bi.mna06, true);
-                else
+                    bi.mna0601.setTag("-1");
+                } else {
                     ClearClass.ClearRadioButton(bi.mna06, false);
+
+                    bi.mna0601.setTag("");
+                }
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
 
+            }
+        });
+
+        bi.mna06.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (bi.mna06a.isChecked() || bi.mna06b.isChecked())
+                    bi.mna0601.setTag("-1");
             }
         });
 
@@ -114,15 +139,26 @@ public class InfoActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (bi.mna0801.getText().toString().isEmpty())
+                if (bi.mna0801.getText().toString().isEmpty()) {
                     ClearClass.ClearRadioButton(bi.mna08, true);
-                else
+                    bi.mna0801.setTag("-1");
+                } else {
                     ClearClass.ClearRadioButton(bi.mna08, false);
+                    bi.mna0801.setTag("");
+                }
             }
 
             @Override
             public void afterTextChanged(Editable editable) {
 
+            }
+        });
+
+        bi.mna08.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (bi.mna08a.isChecked() || bi.mna08b.isChecked())
+                    bi.mna0801.setTag("-1");
             }
         });
 
@@ -195,6 +231,7 @@ public class InfoActivity extends AppCompatActivity {
             e.printStackTrace();
         }*/
 
+        bi.fldgrpmna01.setVisibility(View.VISIBLE);
 
     }
 

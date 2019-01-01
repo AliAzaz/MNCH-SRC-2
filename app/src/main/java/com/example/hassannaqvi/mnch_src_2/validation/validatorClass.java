@@ -250,6 +250,12 @@ public abstract class validatorClass {
             if (view.getVisibility() == View.GONE || !view.isEnabled())
                 continue;
 
+            if (view.getTag() != null && view.getTag().equals("-1")) {
+                if (view instanceof EditText)
+                    ((EditText) view).setError(null);
+                continue;
+            }
+
             if (view instanceof CardView) {
                 for (int j = 0; j < ((CardView) view).getChildCount(); j++) {
                     View view1 = ((CardView) view).getChildAt(j);
@@ -300,6 +306,7 @@ public abstract class validatorClass {
         }
         return true;
     }
+
     public static boolean EmptyCheckingContainerForButtons(Context context, LinearLayout lv) {
 
 
@@ -308,7 +315,7 @@ public abstract class validatorClass {
 
           /*  if (view.getVisibility() == View.GONE || !view.isEnabled())
                 continue;*/
-            if (view.getVisibility() == View.GONE )
+            if (view.getVisibility() == View.GONE)
                 continue;
 
             if (view instanceof CardView) {

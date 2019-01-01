@@ -56,10 +56,6 @@
             android:name=".ui.InfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
-        <activity
-            android:name=".ui.Form01Enrolment"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1" />
         <activity android:name=".ui.Section02Activity" />
         <activity android:name=".ui.Section03Activity"></activity>
     </application>

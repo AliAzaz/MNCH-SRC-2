@@ -233,8 +233,7 @@ public class MainActivity extends Activity {
     }
 
     public void openForm(String fType) {
-        final Intent oF = new Intent(MainActivity.this, selectedForm(fType))
-                .putExtra("fType", fType);
+        final Intent oF = new Intent(MainActivity.this, InfoActivity.class);
 
         if (sharedPref.getString("tagName", null) != "" && sharedPref.getString("tagName", null) != null && !MainApp.userName.equals("0000")) {
             startActivity(oF);
@@ -274,25 +273,6 @@ public class MainActivity extends Activity {
 
             builder.show();
         }
-    }
-
-    private Class<?> selectedForm(String fType) {
-
-        Class retClass = null;
-
-        switch (fType) {
-            case "1a":
-            case "1b":
-                retClass = Form01Enrolment.class;
-                break;
-            case "4":
-            case "5":
-            case "6":
-                retClass = InfoActivity.class;
-                break;
-        }
-
-        return retClass;
     }
 
     public void openDB() {

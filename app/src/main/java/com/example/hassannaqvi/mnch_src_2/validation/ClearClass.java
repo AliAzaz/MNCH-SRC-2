@@ -15,15 +15,14 @@ import android.widget.RadioGroup;
 public class ClearClass {
 
     public static void ClearRadioButton(RadioGroup rdGrp, boolean flag) {
-        if (rdGrp.getCheckedRadioButtonId() == -1) {
 
-            rdGrp.clearCheck();
+        rdGrp.clearCheck();
+        rdGrp.setEnabled(flag);
 
-            for (int i = 0; i < rdGrp.getChildCount(); i++) {
-                View v = rdGrp.getChildAt(i);
-                if (v instanceof RadioButton) {
-                    v.setEnabled(flag);
-                }
+        for (int i = 0; i < rdGrp.getChildCount(); i++) {
+            View v = rdGrp.getChildAt(i);
+            if (v instanceof RadioButton) {
+                v.setEnabled(flag);
             }
         }
     }
