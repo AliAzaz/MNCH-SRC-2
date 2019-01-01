@@ -53,16 +53,14 @@
 
 
     <string name="mnaHeading">Socio-Demographic Information</string>
+
+    <string name="mna00">  گهر جو نمبر </string>
     <string name="mna01"> جواب ڏيندڙ جو نالو </string>
-
-
     <string name="mna02"> جواب ڏيندڙ جي عمر </string>
-
-
     <string name="mna03"> توهان ڪيترا سال اسڪول ۾ پڙهيا آهيو؟ </string>
-    <string name="mna03a"> اسڪول جو عرصو </string>
-    <string name="mna03b"> نه، فارمل تعليم </string>
-    <string name="mna03c"> مذهبي تعليم </string>
+    <string name="mna0301"> اسڪول جو عرصو </string>
+    <string name="mna03a"> نه، فارمل تعليم </string>
+    <string name="mna03b"> مذهبي تعليم </string>
 
     <string name="mna04"> توهان جو پئشو ڪهڙو آهي؟ </string>
     <string name="mna04a"> پروفيشنل/ٽيڪنيڪل/انتظامي </string>
@@ -90,10 +88,10 @@
 
 
     <string name="mna06"> جيڪڏهن شادي شده آهيو ته توهان جو مڙس ڪيترا سال اسڪول ۾ پڙهيو آهي؟ </string>
-    <string name="mna06a"> اسڪول ۾ مڪمل ڪيل جماعتن جو تعداد </string>
-    <string name="mna06b"> پرائمري تعليم </string>
-    <string name="mna06c"> مذهبي تعليم </string>
-    <string name="mna06d"> خبر ناهي </string>
+    <string name="mna0601"> اسڪول ۾ مڪمل ڪيل جماعتن جو تعداد </string>
+    <string name="mna06a"> پرائمري تعليم </string>
+    <string name="mna06b"> مذهبي تعليم </string>
+    <string name="mna06c"> خبر ناهي </string>
 
 
     <string name="mna07"> توهان جي مڙس جو پيشو ڪهڙو آهي؟ </string>
@@ -112,9 +110,9 @@
 
 
     <string name="mna08"> توهان جي گهر جي ٽوٽل آمدني ڪيتري آهي؟ ان ۾ سڀني گهر ڀاتين جي سڀني ذريعن ( پگهار ، پنهنجي پيداوار ، ٻين خاندان جي فردن) جي آمدنيءَ کي شامل ڪريو . </string>
-    <string name="mna08a"> روپين ۾ </string>
-    <string name="mna08b"> خبر ناهي </string>
-    <string name="mna08c"> جواب ڏيڻ نه ٿا چاهين </string>
+    <string name="mna0801"> روپين ۾ </string>
+    <string name="mna08a"> خبر ناهي </string>
+    <string name="mna08b"> جواب ڏيڻ نه ٿا چاهين </string>
 
 
     <string name="mna09"> گهر ۾ ڪهڙي ٻولي استعمال ڪئي ويندي آهي؟ </string>

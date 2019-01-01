@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.hassannaqvi.mnch_src_2.ui.InfoActivity">
 
@@ -26,7 +25,7 @@
 
         <LinearLayout style="@style/linerlayout_view">
 
-            <!--id1-->
+            <!--mna00-->
             <android.support.v7.widget.CardView style="@style/cardView">
 
                 <LinearLayout style="@style/linerlayout_view">
@@ -36,15 +35,15 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/colorPrimary"
-                        android:text="@string/lsid1"
+                        android:text="@string/mna00"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:textColor="@android:color/white"
                         android:textSize="20sp" />
 
                     <EditText
-                        android:id="@+id/lsid1"
+                        android:id="@+id/mna00"
                         style="@style/textInput"
-                        android:hint="@string/lsid1"
+                        android:hint="@string/mna00"
                         android:inputType="number"
                         android:maxLength="5" />
 
@@ -78,14 +77,13 @@
 
             </android.support.v7.widget.CardView>
 
-
             <LinearLayout
-                android:id="@+id/fldgrpls01"
+                android:id="@+id/fldgrpmna01"
                 style="@style/linerlayout_view_wt_bound"
-                android:visibility="gone"
+                android:visibility="visible"
                 tools:visibility="visible">
 
-                <!--id4-->
+                <!--mna01-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -95,26 +93,22 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/lsid4"
+                            android:text="@string/mna01"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/lsid4"
+                            android:id="@+id/mna01"
                             style="@style/textInput"
-                            android:enabled="false"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
                             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz"
-                            android:hint="@string/lsid4" />
+                            android:hint="@string/mna01" />
 
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
 
-                <!--id5-->
+                <!--mna02-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -124,64 +118,22 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/lsid5"
-                            android:textAppearance="?android:attr/textAppearanceLarge"
-                            android:textColor="@android:color/white"
-                            android:textSize="20sp" />
-
-                        <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
-                            android:id="@+id/lsid5"
-                            style="@style/textInput"
-                            android:layout_margin="10dp"
-                            android:enabled="false"
-                            android:focusable="false"
-                            android:hint="DD/MM/YYYY"
-                            android:textColor="@android:color/black"
-                            app:dateFormat="dd-MM-yyyy" />
-
-                    </LinearLayout>
-
-                </android.support.v7.widget.CardView>
-
-                <!--id7-->
-                <android.support.v7.widget.CardView style="@style/cardView">
-
-                    <LinearLayout style="@style/linerlayout_view">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/lsid7"
+                            android:text="@string/mna02"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <EditText
-                            android:id="@+id/lsid7y"
-                            style="@style/textInput"
-                            android:enabled="false"
-                            android:hint="@string/year"
-                            android:inputType="number"
-                            android:maxLength="1" />
-
-                        <com.edittextpicker.aliazaz.textpicker.TextPicker
-                            android:id="@+id/lsid7m"
-                            style="@style/textInput"
-                            android:enabled="false"
-                            android:hint="@string/month"
-                            android:inputType="number"
-                            android:maxLength="2"
-                            app:maxValue="11"
-                            app:minValue="0"
-                            app:type="range" />
+                            android:id="@+id/mna02"
+                            style="@style/EditText_number"
+                            android:hint="@string/mna02"
+                            android:maxLength="2" />
 
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
 
-                <!--id10-->
+                <!--mna03-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -191,47 +143,40 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/lsid10"
+                            android:text="@string/mna03"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/mna0301"
+                            style="@style/EditText_number"
+                            android:hint="@string/mna0301"
+                            android:maxLength="2" />
 
                         <RadioGroup
-                            android:id="@+id/lsid10"
+                            android:id="@+id/mna03"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <RadioButton
-                                android:id="@+id/lsid10a"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/lsid10a" />
+                                android:id="@+id/mna03a"
+                                style="@style/radiobutton"
+                                android:text="@string/mna03a" />
 
                             <RadioButton
-                                android:id="@+id/lsid10b"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/lsid10b" />
+                                android:id="@+id/mna03b"
+                                style="@style/radiobutton"
+                                android:text="@string/mna03b" />
 
-                            <RadioButton
-                                android:id="@+id/lsid10c"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/lsid10c" />
-
-                            <RadioButton
-                                android:id="@+id/lsid10d"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/lsid10d" />
                         </RadioGroup>
 
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
 
-                <!--id11-->
+                <!--mna04-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -241,28 +186,140 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/lsid11"
+                            android:text="@string/mna04"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
                         <RadioGroup
-                            android:id="@+id/lsid11"
+                            android:id="@+id/mna04"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <RadioButton
-                                android:id="@+id/lsid11a"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/lsid11a" />
+                                android:id="@+id/mna04a"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04a" />
 
                             <RadioButton
-                                android:id="@+id/lsid11b"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/lsid11b" />
+                                android:id="@+id/mna04b"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04b" />
+
+                            <RadioButton
+                                android:id="@+id/mna04c"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04c" />
+
+                            <RadioButton
+                                android:id="@+id/mna04d"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04d" />
+
+                            <RadioButton
+                                android:id="@+id/mna04e"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04e" />
+
+                            <RadioButton
+                                android:id="@+id/mna04f"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04f" />
+
+                            <RadioButton
+                                android:id="@+id/mna04g"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04g" />
+
+                            <RadioButton
+                                android:id="@+id/mna04h"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04h" />
+
+                            <RadioButton
+                                android:id="@+id/mna04i"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04i" />
+
+                            <RadioButton
+                                android:id="@+id/mna04j"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04j" />
+
+                            <RadioButton
+                                android:id="@+id/mna04k"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04k" />
+
+                            <RadioButton
+                                android:id="@+id/mna04l"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04l" />
+
+                            <RadioButton
+                                android:id="@+id/mna04m"
+                                style="@style/radiobutton"
+                                android:text="@string/mna04m" />
+
+                            <RadioButton
+                                android:id="@+id/mna0496"
+                                style="@style/radiobutton"
+                                android:text="@string/other" />
+
+                            <EditText
+                                android:id="@+id/mna0496x"
+                                style="@style/textInput"
+                                android:hint="@string/other"
+                                android:text='@{mna0496.checked ? mna0496x.getText.toString : ""}'
+                                android:visibility="@{mna0496.checked ? View.VISIBLE : View.GONE}" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--mna05-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/mna05"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/mna05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/mna05a"
+                                style="@style/radiobutton"
+                                android:text="@string/mna05a" />
+
+                            <RadioButton
+                                android:id="@+id/mna05b"
+                                style="@style/radiobutton"
+                                android:text="@string/mna05b" />
+
+                            <RadioButton
+                                android:id="@+id/mna05c"
+                                style="@style/radiobutton"
+                                android:text="@string/mna05c" />
+
+                            <RadioButton
+                                android:id="@+id/mna05d"
+                                style="@style/radiobutton"
+                                android:text="@string/mna05d" />
 
                         </RadioGroup>
 
@@ -271,11 +328,58 @@
                 </android.support.v7.widget.CardView>
 
                 <LinearLayout
-                    android:id="@+id/fldgrpls02"
+                    android:id="@+id/fldgrpmn02"
                     style="@style/linerlayout_view_wt_bound"
-                    android:visibility="@{lsid11b.checked ? View.GONE : View.VISIBLE}">
+                    android:visibility="@{mna05b.checked ? View.GONE : View.VISIBLE}">
 
-                    <!--id12-->
+                    <!--mna06-->
+                    <android.support.v7.widget.CardView style="@style/cardView">
+
+                        <LinearLayout style="@style/linerlayout_view">
+
+                            <TextView
+                                style="@style/radiobutton"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/mna06"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@android:color/white"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:id="@+id/mna0601"
+                                style="@style/EditText_number"
+                                android:hint="@string/mna0601"
+                                android:maxLength="2" />
+
+                            <RadioGroup
+                                android:id="@+id/mna06"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/mna06a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna06a" />
+
+                                <RadioButton
+                                    android:id="@+id/mna06b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna06b" />
+
+                                <RadioButton
+                                    android:id="@+id/mna06c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna06c" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--mna07-->
                     <android.support.v7.widget.CardView style="@style/cardView">
 
                         <LinearLayout style="@style/linerlayout_view">
@@ -285,87 +389,84 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="@color/colorPrimary"
-                                android:text="@string/lsid12"
+                                android:text="@string/mna07"
                                 android:textAppearance="?android:attr/textAppearanceLarge"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
 
                             <RadioGroup
-                                android:id="@+id/lsid12"
+                                android:id="@+id/mna07"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:orientation="vertical">
 
                                 <RadioButton
-                                    android:id="@+id/lsid12a"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/yes" />
+                                    android:id="@+id/mna07a"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07a" />
 
                                 <RadioButton
-                                    android:id="@+id/lsid12b"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/no" />
+                                    android:id="@+id/mna07b"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07b" />
 
                                 <RadioButton
-                                    android:id="@+id/lsid1298"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/dkn" />
-
-                            </RadioGroup>
-
-                        </LinearLayout>
-
-                    </android.support.v7.widget.CardView>
-
-                    <!--id13-->
-                    <android.support.v7.widget.CardView
-                        style="@style/cardView"
-                        android:visibility="@{lsid12a.checked ? View.VISIBLE : View.GONE}">
-
-                        <LinearLayout style="@style/linerlayout_view">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:background="@color/colorPrimary"
-                                android:text="@string/lsid13"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
-                                android:textColor="@android:color/white"
-                                android:textSize="20sp" />
-
-                            <RadioGroup
-                                android:id="@+id/lsid13"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical">
+                                    android:id="@+id/mna07c"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07c" />
 
                                 <RadioButton
-                                    android:id="@+id/lsid13a"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/lsid13a" />
+                                    android:id="@+id/mna07d"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07d" />
 
                                 <RadioButton
-                                    android:id="@+id/lsid13b"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/lsid13b" />
+                                    android:id="@+id/mna07e"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07e" />
 
                                 <RadioButton
-                                    android:id="@+id/lsid13c"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/lsid13c" />
+                                    android:id="@+id/mna07f"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07f" />
 
                                 <RadioButton
-                                    android:id="@+id/lsid13d"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/lsid13d" />
+                                    android:id="@+id/mna07g"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07g" />
+
+                                <RadioButton
+                                    android:id="@+id/mna07h"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07h" />
+
+                                <RadioButton
+                                    android:id="@+id/mna07i"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07i" />
+
+                                <RadioButton
+                                    android:id="@+id/mna07j"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07j" />
+
+                                <RadioButton
+                                    android:id="@+id/mna07k"
+                                    style="@style/radiobutton"
+                                    android:text="@string/mna07k" />
+
+                                <RadioButton
+                                    android:id="@+id/mna0796"
+                                    style="@style/radiobutton"
+                                    android:text="@string/other" />
+
+                                <EditText
+                                    android:id="@+id/mna0796x"
+                                    style="@style/textInput"
+                                    android:hint="@string/other"
+                                    android:text='@{mna0796.checked ? mna0796x.getText.toString : ""}'
+                                    android:visibility="@{mna0796.checked ? View.VISIBLE : View.GONE}" />
+
                             </RadioGroup>
 
                         </LinearLayout>
@@ -374,7 +475,7 @@
 
                 </LinearLayout>
 
-                <!--id14-->
+                <!--mna08-->
                 <android.support.v7.widget.CardView style="@style/cardView">
 
                     <LinearLayout style="@style/linerlayout_view">
@@ -384,19 +485,103 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:background="@color/colorPrimary"
-                            android:text="@string/lsid14"
+                            android:text="@string/mna08"
                             android:textAppearance="?android:attr/textAppearanceLarge"
                             android:textColor="@android:color/white"
                             android:textSize="20sp" />
 
-                        <io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText
-                            android:id="@+id/lsid14"
-                            style="@style/textInput"
-                            android:layout_margin="10dp"
-                            android:focusable="false"
-                            android:hint="DD/MM/YYYY"
-                            android:textColor="@android:color/black"
-                            app:dateFormat="dd-MM-yyyy" />
+                        <EditText
+                            android:id="@+id/mna0801"
+                            style="@style/EditText_number"
+                            android:hint="@string/mna0801"
+                            android:maxLength="2" />
+
+                        <RadioGroup
+                            android:id="@+id/mna08"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/mna08a"
+                                style="@style/radiobutton"
+                                android:text="@string/mna08a" />
+
+                            <RadioButton
+                                android:id="@+id/mna08b"
+                                style="@style/radiobutton"
+                                android:text="@string/mna08b" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--mna09-->
+                <android.support.v7.widget.CardView style="@style/cardView">
+
+                    <LinearLayout style="@style/linerlayout_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/mna09"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/mna09"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/mna09a"
+                                style="@style/radiobutton"
+                                android:text="@string/mna09a" />
+
+                            <RadioButton
+                                android:id="@+id/mna09b"
+                                style="@style/radiobutton"
+                                android:text="@string/mna09b" />
+
+                            <RadioButton
+                                android:id="@+id/mna09c"
+                                style="@style/radiobutton"
+                                android:text="@string/mna09c" />
+
+                            <RadioButton
+                                android:id="@+id/mna09d"
+                                style="@style/radiobutton"
+                                android:text="@string/mna09d" />
+
+                            <RadioButton
+                                android:id="@+id/mna09e"
+                                style="@style/radiobutton"
+                                android:text="@string/mna09e" />
+
+                            <RadioButton
+                                android:id="@+id/mna09f"
+                                style="@style/radiobutton"
+                                android:text="@string/mna09f" />
+
+                            <RadioButton
+                                android:id="@+id/mna0996"
+                                style="@style/radiobutton"
+                                android:text="@string/other" />
+
+                            <EditText
+                                android:id="@+id/mna0996x"
+                                style="@style/textInput"
+                                android:hint="@string/other"
+                                android:text='@{mna0996.checked ? mna0996x.getText.toString : ""}'
+                                android:visibility="@{mna0996.checked ? View.VISIBLE : View.GONE}" />
+
+                        </RadioGroup>
 
                     </LinearLayout>
 
