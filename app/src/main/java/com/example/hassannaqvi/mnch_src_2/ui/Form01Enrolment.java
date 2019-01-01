@@ -1,7 +1,6 @@
 package com.example.hassannaqvi.mnch_src_2.ui;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -21,7 +20,7 @@ import com.example.hassannaqvi.mnch_src_2.core.MainApp;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.GetFncDAO;
 import com.example.hassannaqvi.mnch_src_2.data.entities.Clusters;
-import com.example.hassannaqvi.mnch_src_2.data.entities.Forms_04_05;
+import com.example.hassannaqvi.mnch_src_2.data.entities.Forms;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivityForm01EnrolmentBinding;
 import com.example.hassannaqvi.mnch_src_2.get.db.GetIndDBData;
 import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
@@ -41,7 +40,7 @@ import static com.example.hassannaqvi.mnch_src_2.ui.LoginActivity.db;
 public class Form01Enrolment extends AppCompatActivity {
     private static final String TAG = Form01Enrolment.class.getName();
     ActivityForm01EnrolmentBinding bi;
-    public static Forms_04_05 fc_4_5;
+    public static Forms fc_4_5;
     String getFtype = "", deviceID;
     String[] cluster_name;
 
@@ -292,7 +291,7 @@ public class Form01Enrolment extends AppCompatActivity {
 
     private void SaveDraft() throws JSONException {
 
-        fc_4_5 = new Forms_04_05();
+        fc_4_5 = new Forms();
 
         fc_4_5.setDevicetagID(MainApp.getTagName(this));
         fc_4_5.setFormType(getIntent().getStringExtra("fType"));
@@ -558,7 +557,7 @@ public class Form01Enrolment extends AppCompatActivity {
         return true;
     }
 
-    public void setGPS(Forms_04_05 fc) {
+    public void setGPS(Forms fc) {
         SharedPreferences GPSPref = getSharedPreferences("GPSCoordinates", Context.MODE_PRIVATE);
         try {
             String lat = GPSPref.getString("Latitude", "0");

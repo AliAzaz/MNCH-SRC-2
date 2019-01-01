@@ -5,17 +5,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.hassannaqvi.mnch_src_2.R;
-import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection03Binding;
+import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection04Binding;
 
-public class Section03Activity extends AppCompatActivity {
+public class Section04Activity extends AppCompatActivity {
 
-    ActivitySection03Binding bi;
+    ActivitySection04Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        bi = DataBindingUtil.setContentView(this, R.layout.activity_section03);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section04);
     }
 
     public void BtnContinue() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.Form01Enrolment">
+    tools:context=".ui.Section04Activity">
 
     <data>
 
@@ -9,7 +9,7 @@
 
         <variable
             name="callback"
-            type="com.example.hassannaqvi.mnch_src_2.ui.Form01Enrolment" />
+            type="com.example.hassannaqvi.mnch_src_2.ui.Section04Activity" />
     </data>
 
 

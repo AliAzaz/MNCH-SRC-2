@@ -7,8 +7,11 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.text.format.DateFormat;
 import android.util.Log;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.JSON.GeneratorClass;
@@ -16,8 +19,9 @@ import com.example.hassannaqvi.mnch_src_2.R;
 import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
 import com.example.hassannaqvi.mnch_src_2.core.MainApp;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
-import com.example.hassannaqvi.mnch_src_2.data.entities.Forms_04_05;
+import com.example.hassannaqvi.mnch_src_2.data.entities.Forms;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivityInfoBinding;
+import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
 import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 import org.json.JSONObject;
@@ -32,11 +36,11 @@ public class InfoActivity extends AppCompatActivity {
 
     private static final String TAG = InfoActivity.class.getName();
     ActivityInfoBinding bi;
-    public static Forms_04_05 fc_4_5;
+    public static Forms fc_4_5;
     String fTYPE = "", deviceID;
     Class<?> routeClass;
-    Forms_04_05 childDT;
-    Forms_04_05.Simple_Forms_04_05 sInfo_parse;
+    Forms childDT;
+    Forms.Simple_Forms_04_05 sInfo_parse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,77 @@ public class InfoActivity extends AppCompatActivity {
 
     private void setContentUI() {
 
+        // mna03
+        bi.mna0301.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (bi.mna0301.getText().toString().isEmpty())
+                    ClearClass.ClearRadioButton(bi.mna03, true);
+                else
+                    ClearClass.ClearRadioButton(bi.mna03, false);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        // mna05
+        bi.mna05.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == bi.mna05b.getId())
+                    ClearClass.ClearAllFields(bi.fldgrpmn02);
+            }
+        });
+
+        // mna06
+        bi.mna0601.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (bi.mna0601.getText().toString().isEmpty())
+                    ClearClass.ClearRadioButton(bi.mna06, true);
+                else
+                    ClearClass.ClearRadioButton(bi.mna06, false);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        // mna08
+        bi.mna0801.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (bi.mna0801.getText().toString().isEmpty())
+                    ClearClass.ClearRadioButton(bi.mna08, true);
+                else
+                    ClearClass.ClearRadioButton(bi.mna08, false);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
 
     }
 
@@ -75,14 +150,14 @@ public class InfoActivity extends AppCompatActivity {
 
             if (childData != null) {
                 Toast.makeText(this, "Child ID validate..", Toast.LENGTH_SHORT).show();
-                childDT = (Forms_04_05) childData;
+                childDT = (Forms) childData;
 
                 // Child Name
                 bi.lsid4.setText(childDT.getParticipantName());
                 // Form date of enrollment
                 bi.lsid5.setText(childDT.getFormDate());
 
-                sInfo_parse = new Gson().fromJson(childDT.getSInfo(), Forms_04_05.Simple_Forms_04_05.class);
+                sInfo_parse = new Gson().fromJson(childDT.getSInfo(), Forms.Simple_Forms_04_05.class);
 
                 // Age setting
                 String y, m;
@@ -153,9 +228,8 @@ public class InfoActivity extends AppCompatActivity {
 
     private void SaveDraft() {
 
-        fc_4_5 = new Forms_04_05();
+        fc_4_5 = new Forms();
         fc_4_5.setDevicetagID(MainApp.getTagName(this));
-        fc_4_5.setFormType(fTYPE);
         fc_4_5.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
         fc_4_5.setUsername(MainApp.userName);
         fc_4_5.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
@@ -176,7 +250,7 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
-    public void setGPS(Forms_04_05 fc_4_5) {
+    public void setGPS(Forms fc_4_5) {
         SharedPreferences GPSPref = getSharedPreferences("GPSCoordinates", Context.MODE_PRIVATE);
         try {
             String lat = GPSPref.getString("Latitude", "0");
@@ -207,7 +281,6 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-
         return validatorClass.EmptyCheckingContainer(this, bi.fldgrpmna01);
     }
 

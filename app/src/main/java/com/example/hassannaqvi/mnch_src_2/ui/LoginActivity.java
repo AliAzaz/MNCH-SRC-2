@@ -114,15 +114,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         try {
             long installedOn = this
                     .getPackageManager()
-                    .getPackageInfo("com.example.hassannaqvi.leaps_scaleup", 0)
+                    .getPackageInfo("com.example.hassannaqvi.mnch_src_2", 0)
                     .lastUpdateTime;
             Integer versionCode = this
                     .getPackageManager()
-                    .getPackageInfo("com.example.hassannaqvi.leaps_scaleup", 0)
+                    .getPackageInfo("com.example.hassannaqvi.mnch_src_2", 0)
                     .versionCode;
             String versionName = this
                     .getPackageManager()
-                    .getPackageInfo("com.example.hassannaqvi.leaps_scaleup", 0)
+                    .getPackageInfo("com.example.hassannaqvi.mnch_src_2", 0)
                     .versionName;
             bi.txtinstalldate.setText("Ver. " + versionName + "." + String.valueOf(versionCode) + " \r\n( Last Updated: " + new SimpleDateFormat("dd MMM. yyyy").format(new Date(installedOn)) + " )");
 

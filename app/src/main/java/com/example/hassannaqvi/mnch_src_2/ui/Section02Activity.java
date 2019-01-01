@@ -1,14 +1,10 @@
 package com.example.hassannaqvi.mnch_src_2.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.hassannaqvi.mnch_src_2.R;
-import com.example.hassannaqvi.mnch_src_2.core.MainApp;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection02Binding;
-
-import org.json.JSONException;
 
 public class Section02Activity extends AppCompatActivity {
 
@@ -35,6 +31,10 @@ public class Section02Activity extends AppCompatActivity {
 //        } catch (JSONException e) {
 //            e.printStackTrace();
 //        }
+
+    }
+
+    public void BtnEnd() {
 
     }
 

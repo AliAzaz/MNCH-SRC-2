@@ -18,7 +18,6 @@ import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.text.format.DateFormat;
 
-import com.example.hassannaqvi.mnch_src_2.data.entities.Forms;
 import com.example.hassannaqvi.mnch_src_2.utils.TypefaceUtil;
 
 import java.io.Serializable;
@@ -134,7 +133,6 @@ public class MainApp extends Application {
                                 activity.finish();
                                 Intent end_intent = new Intent(context, EndActivityClass);
                                 end_intent.putExtra("complete", complete);
-                                end_intent.putExtra("typeFlag", objectData.getClass().equals(Forms.class));
                                 end_intent.putExtra("fc_data", (Serializable) objectData);
                                 context.startActivity(end_intent);
                             }

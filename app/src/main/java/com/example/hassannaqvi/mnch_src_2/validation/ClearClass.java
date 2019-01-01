@@ -14,15 +14,15 @@ import android.widget.RadioGroup;
 
 public class ClearClass {
 
-    public static void ClearRadioButton(LinearLayout container, RadioGroup rdGrp) {
+    public static void ClearRadioButton(RadioGroup rdGrp, boolean flag) {
         if (rdGrp.getCheckedRadioButtonId() == -1) {
 
             rdGrp.clearCheck();
 
-            for (int i = 0; i < container.getChildCount(); i++) {
-                View v = container.getChildAt(i);
+            for (int i = 0; i < rdGrp.getChildCount(); i++) {
+                View v = rdGrp.getChildAt(i);
                 if (v instanceof RadioButton) {
-                    v.setEnabled(false);
+                    v.setEnabled(flag);
                 }
             }
         }
@@ -73,7 +73,7 @@ public class ClearClass {
                 ((CheckBox) v).setChecked(false);
                 ((CheckBox) v).setError(null);
             } else if (v instanceof RadioGroup) {
-                    ((RadioGroup) v).clearCheck();
+                ((RadioGroup) v).clearCheck();
 
             } else if (v instanceof EditText) {
                 ((EditText) v).setText(null);
@@ -95,7 +95,7 @@ public class ClearClass {
                 ((CheckBox) v).setChecked(false);
                 ((CheckBox) v).setError(null);
             } else if (v instanceof RadioGroup) {
-                    ((RadioGroup) v).clearCheck();
+                ((RadioGroup) v).clearCheck();
             } else if (v instanceof EditText) {
                 ((EditText) v).setText(null);
                 ((EditText) v).setError(null);
@@ -108,7 +108,7 @@ public class ClearClass {
                         ((CheckBox) v1).setChecked(false);
                         ((CheckBox) v1).setError(null);
                     } else if (v1 instanceof RadioGroup) {
-                            ((RadioGroup) v1).clearCheck();
+                        ((RadioGroup) v1).clearCheck();
                     } else if (v1 instanceof EditText) {
                         ((EditText) v1).setText(null);
                         ((EditText) v1).setError(null);
