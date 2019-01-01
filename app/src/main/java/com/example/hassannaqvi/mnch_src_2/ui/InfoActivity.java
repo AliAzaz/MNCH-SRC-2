@@ -7,11 +7,8 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.text.format.DateFormat;
 import android.util.Log;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.JSON.GeneratorClass;
@@ -19,32 +16,24 @@ import com.example.hassannaqvi.mnch_src_2.R;
 import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
 import com.example.hassannaqvi.mnch_src_2.core.MainApp;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
-import com.example.hassannaqvi.mnch_src_2.data.DAO.GetFncDAO;
 import com.example.hassannaqvi.mnch_src_2.data.entities.Forms_04_05;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivityInfoBinding;
-import com.example.hassannaqvi.mnch_src_2.get.db.GetIndDBData;
-import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
 import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
-import com.google.gson.Gson;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
-import static android.view.View.GONE;
-import static android.view.View.VISIBLE;
 import static com.example.hassannaqvi.mnch_src_2.ui.LoginActivity.db;
-import static com.example.hassannaqvi.mnch_src_2.utils.JsonUtils.mergeJSONObjects;
 
 public class InfoActivity extends AppCompatActivity {
 
     private static final String TAG = InfoActivity.class.getName();
     ActivityInfoBinding bi;
     public static Forms_04_05 fc_4_5;
-    String fTYPE = "", fExt = "", deviceID;
+    String fTYPE = "", deviceID;
     Class<?> routeClass;
     Forms_04_05 childDT;
     Forms_04_05.Simple_Forms_04_05 sInfo_parse;
@@ -61,91 +50,23 @@ public class InfoActivity extends AppCompatActivity {
 
     private void setContentUI() {
 
-        /*Getting intent data*/
-        fTYPE = getIntent().getStringExtra("fType");
 
-        /*Setting BlackBox date picker*/
-        bi.lsid5.setManager(getSupportFragmentManager());
-        bi.lsid5.setMaxDate(new SimpleDateFormat("dd/MM/yyyy").format(System.currentTimeMillis()));
-        bi.lsid14.setManager(getSupportFragmentManager());
-        bi.lsid14.setMaxDate(new SimpleDateFormat("dd/MM/yyyy").format(System.currentTimeMillis()));
-
-        /*Setting edittext*/
-        bi.lsid7m.setManager(this, "Month");
-
-        /*Setting listeners*/
-        bi.lsid1.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                bi.fldgrpls01.setVisibility(GONE);
-                ClearClass.ClearAllFields(bi.fldgrpls01);
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
-
-        bi.lsid11.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i == bi.lsid11b.getId()) {
-                    bi.lsid12.clearCheck();
-                    bi.lsid13.clearCheck();
-                }
-            }
-        });
-
-        bi.lsid12.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i != bi.lsid12a.getId()) {
-                    bi.lsid13.clearCheck();
-                }
-            }
-        });
-
-        /*Calling fnc*/
-        routeClass = selectedForm(fTYPE);
-
-    }
-
-    private Class<?> selectedForm(String fType) {
-
-        Class retClass = null;
-
-        switch (fType) {
-            case "4":
-                fExt = "f4_";
-                retClass = Form01Enrolment.class;
-                break;
-
-        }
-
-        return retClass;
     }
 
     public void BtnContinue() {
-        if (formValidation()) {
-            SaveDraft();
-            if (UpdateDB()) {
-                startActivity(new Intent(getApplicationContext(), routeClass));
-            } else {
-                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
-            }
-        }
+        if (!formValidation())
+            return;
 
+        SaveDraft();
+        if (UpdateDB()) {
+            startActivity(new Intent(getApplicationContext(), Section02Activity.class));
+        } else {
+            Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void BtnIDValid() {
-        if (!validatorClass.EmptyTextBox(this, bi.lsid1, getString(R.string.ls01a01))) {
+        /*if (!validatorClass.EmptyTextBox(this, bi.lsid1, getString(R.string.ls01a01))) {
             return;
         }
 
@@ -197,7 +118,7 @@ public class InfoActivity extends AppCompatActivity {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
-        }
+        }*/
 
 
     }
@@ -239,21 +160,19 @@ public class InfoActivity extends AppCompatActivity {
         fc_4_5.setUsername(MainApp.userName);
         fc_4_5.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
         fc_4_5.setDeviceID(deviceID);
-        fc_4_5.setParticipantID(bi.lsid1.getText().toString());
-        fc_4_5.setClustercode(childDT.getClustercode());
 
         setGPS(fc_4_5); // Set GPS
 
-        JSONObject jsonInfo = new JSONObject();
+        /*JSONObject jsonInfo = new JSONObject();
         try {
             jsonInfo.put(fExt + "lsid3", sInfo_parse.getLs01a06());
 
         } catch (JSONException e) {
             e.printStackTrace();
-        }
+        }*/
 
-        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldgrpls01, true, fExt);
-        fc_4_5.setSInfo(String.valueOf(mergeJSONObjects(jsonInfo, Json)));
+        JSONObject Json = GeneratorClass.getContainerJSON(bi.fldgrpmna01, true);
+//        fc_4_5.setSInfo(String.valueOf(mergeJSONObjects(jsonInfo, Json)));
 
     }
 
@@ -289,7 +208,7 @@ public class InfoActivity extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        return validatorClass.EmptyCheckingContainer(this, bi.fldgrpls01);
+        return validatorClass.EmptyCheckingContainer(this, bi.fldgrpmna01);
     }
 
     public void BtnEnd() {
