@@ -275,13 +275,12 @@
     <string name="mnc05d"> ساڙي ڇڏڻ </string>
 
     <string name="mnc06"> استعمال ٿيل شين کي ڌوئڻ کانپوءِ ڪٿي سڪائيندا آهيو؟ </string>
-    <string name="mnc06a"> هڪ کان وڌيڪ جواب ٿي سگهن ٿا </string>
-    <string name="mnc06b"> سج جي روشني ۾ </string>
-    <string name="mnc06c"> ٻاهر ڇانو ۾ </string>
-    <string name="mnc06d"> اندر اس ۾ </string>
-    <string name="mnc06e"> اند ڇانو ۾ </string>
-    <string name="mnc06f"> ٻئي ڪپڙي ۾ لڪائي </string>
-    <string name="mnc06g"> ٻئي ڪنهن جاءِ تي لڪائي </string>
+    <string name="mnc06a"> سج جي روشني ۾ </string>
+    <string name="mnc06b"> ٻاهر ڇانو ۾ </string>
+    <string name="mnc06c"> اندر اس ۾ </string>
+    <string name="mnc06d"> اند ڇانو ۾ </string>
+    <string name="mnc06e"> ٻئي ڪپڙي ۾ لڪائي </string>
+    <string name="mnc06f"> ٻئي ڪنهن جاءِ تي لڪائي </string>
 
     <string name="mnc07"> استعمال جي دوران توهان صاف سامان ڪٿي رکندا آهيو؟ </string>
     <string name="mnc07a"> رکندا ڪونه آهيو </string>
