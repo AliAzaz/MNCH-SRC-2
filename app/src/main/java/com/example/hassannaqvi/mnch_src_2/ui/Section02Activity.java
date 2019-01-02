@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection02Binding;
+import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 public class Section02Activity extends AppCompatActivity {
 
@@ -44,7 +45,6 @@ public class Section02Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-
-        return true;
+        return validatorClass.EmptyCheckingContainer(this, bi.fldGrpSec02a);
     }
 }

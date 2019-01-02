@@ -299,11 +299,21 @@ public abstract class validatorClass {
                     return false;
                 }
             } else if (view instanceof LinearLayout) {
-                if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
-                    return false;
+
+                int length = ((LinearLayout) view).getChildCount();
+
+                if (length >= 2) {
+                    if (((LinearLayout) view).getChildAt(1) instanceof CheckBox) {
+                        if (!EmptyCheckBox(context, ((LinearLayout) view),
+                                (CheckBox) ((LinearLayout) view).getChildAt(1),
+                                getString(context, getIDComponent(((LinearLayout) view).getChildAt(0))))) {
+                            return false;
+                        }
+                    } else if (!EmptyCheckingContainer(context, (LinearLayout) view)) {
+                        return false;
+                    }
                 }
             }
-
         }
         return true;
     }
