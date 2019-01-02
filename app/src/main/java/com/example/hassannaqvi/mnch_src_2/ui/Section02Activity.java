@@ -1,7 +1,9 @@
 package com.example.hassannaqvi.mnch_src_2.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection02Binding;
@@ -21,17 +23,12 @@ public class Section02Activity extends AppCompatActivity {
     public void BtnContinue() {
         if (!formValidation())
             return;
-//        try {
-//            SaveDraft();
-//            if (UpdateDB()) {
-////                MainApp.endActivity(this, this, EndingActivity.class, true, fc_4_5);
-//            } else {
-//                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
-//            }
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-
+        SaveDraft();
+        if (UpdateDB()) {
+            startActivity(new Intent(this, Section03Activity.class));
+        } else {
+            Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void BtnEnd() {

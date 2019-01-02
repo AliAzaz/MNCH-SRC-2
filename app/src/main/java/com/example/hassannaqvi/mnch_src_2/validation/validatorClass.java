@@ -250,6 +250,7 @@ public abstract class validatorClass {
             if (view.getVisibility() == View.GONE || !view.isEnabled())
                 continue;
 
+            // use tag for some situations
             if (view.getTag() != null && view.getTag().equals("-1")) {
                 if (view instanceof EditText)
                     ((EditText) view).setError(null);
