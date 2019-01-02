@@ -10,6 +10,9 @@ import android.widget.RadioGroup;
 import com.example.hassannaqvi.mnch_src_2.R;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection03Binding;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class Section03Activity extends AppCompatActivity {
 
     ActivitySection03Binding bi;
@@ -138,8 +141,119 @@ public class Section03Activity extends AppCompatActivity {
 
     }
 
-    private void SaveDraft() {
+    private void SaveDraft() throws JSONException {
+
+        JSONObject s03 = new JSONObject();
+
+        s03.put("mnc01", bi.mnc01a.isChecked() ? "1"
+                : bi.mnc01b.isChecked() ? "2"
+                : bi.mnc0198.isChecked() ? "3" : "0");
+
+        s03.put("mnc02", bi.mnc02.getText().toString());
+
+        s03.put("mnc03", bi.mnc03a.isChecked() ? "1"
+                : bi.mnc03b.isChecked() ? "2"
+                : bi.mnc03c.isChecked() ? "3"
+                : bi.mnc03d.isChecked() ? "4"
+                : bi.mnc03e.isChecked() ? "5"
+                : bi.mnc03f.isChecked() ? "6"
+                : bi.mnc03g.isChecked() ? "7"
+                : bi.mnc03h.isChecked() ? "8"
+                : bi.mnc03i.isChecked() ? "9"
+                : bi.mnc03j.isChecked() ? "10"
+                : bi.mnc0396.isChecked() ? "96"
+                : bi.mnc0397.isChecked() ? "97"
+                : bi.mnc0398.isChecked() ? "98"
+                : "0");
+        s03.put("mnc0396x", bi.mnc0396x.getText().toString());
+
+        s03.put("mnc04", bi.mnc04a.isChecked() ? "1"
+                : bi.mnc04b.isChecked() ? "2"
+                : bi.mnc04c.isChecked() ? "3"
+                : bi.mnc04c.isChecked() ? "3"
+                : bi.mnc0498.isChecked() ? "98"
+                : "0");
+
+        s03.put("mnc05", bi.mnc05a.isChecked() ? "1"
+                : bi.mnc05b.isChecked() ? "2"
+                : bi.mnc05c.isChecked() ? "3"
+                : bi.mnc05d.isChecked() ? "4"
+                : bi.mnc0596.isChecked() ? "96"
+                : bi.mnc0598.isChecked() ? "98"
+                : "0");
+        s03.put("mnc0596x", bi.mnc0596x.getText().toString());
+
+        s03.put("mnc06a", bi.mnc06a.isChecked() ? "1" : "0");
+        s03.put("mnc06b", bi.mnc06b.isChecked() ? "2" : "0");
+        s03.put("mnc06c", bi.mnc06c.isChecked() ? "3" : "0");
+        s03.put("mnc06d", bi.mnc06d.isChecked() ? "4" : "0");
+        s03.put("mnc06e", bi.mnc06e.isChecked() ? "5" : "0");
+        s03.put("mnc06f", bi.mnc06f.isChecked() ? "6" : "0");
+        s03.put("mnc0698", bi.mnc0698.isChecked() ? "98" : "0");
+
+        s03.put("mnc07a", bi.mnc07a.isChecked() ? "1" : "0");
+        s03.put("mnc07b", bi.mnc07b.isChecked() ? "2" : "0");
+        s03.put("mnc07c", bi.mnc07c.isChecked() ? "3" : "0");
+        s03.put("mnc0796", bi.mnc0796.isChecked() ? "96" : "0");
+        s03.put("mnc0798", bi.mnc0798.isChecked() ? "98" : "0");
+
+        s03.put("mnc0796x", bi.mnc0796x.getText().toString());
+
+        s03.put("mnc08a", bi.mnc08a.isChecked() ? "1" : "0");
+        s03.put("mnc08b", bi.mnc08b.isChecked() ? "2" : "0");
+        s03.put("mnc08c", bi.mnc08c.isChecked() ? "3" : "0");
+        s03.put("mnc08d", bi.mnc08d.isChecked() ? "4" : "0");
+        s03.put("mnc0898", bi.mnc0898.isChecked() ? "98" : "0");
+
+        s03.put("mnc09", bi.mnc09a.isChecked() ? "1"
+                : bi.mnc09b.isChecked() ? "2"
+                : bi.mnc09c.isChecked() ? "3"
+                : bi.mnc0996.isChecked() ? "96"
+                : "0");
+
+        s03.put("mnc0996x", bi.mnc0996x.getText().toString());
+
+        s03.put("mnc10a", bi.mnc10a.isChecked() ? "1" : "0");
+        s03.put("mnc10b", bi.mnc10b.isChecked() ? "2" : "0");
+        s03.put("mnc10c", bi.mnc10c.isChecked() ? "3" : "0");
+        s03.put("mnc10d", bi.mnc10d.isChecked() ? "4" : "0");
+        s03.put("mnc10e", bi.mnc10e.isChecked() ? "5" : "0");
+        s03.put("mnc1096", bi.mnc1096.isChecked() ? "96" : "0");
+        s03.put("mnc1098", bi.mnc1098.isChecked() ? "98" : "0");
+
+        s03.put("mnc1096x", bi.mnc1096x.getText().toString());
+
+        s03.put("mnc11", bi.mnc11a.isChecked() ? "1"
+                : bi.mnc11b.isChecked() ? "2"
+                : bi.mnc11c.isChecked() ? "3"
+                : bi.mnc1196.isChecked() ? "96"
+                : bi.mnc1198.isChecked() ? "98"
+                : "0");
+        s03.put("mnc1196x", bi.mnc1196x.getText().toString());
+
+        s03.put("mnc12a", bi.mnc12a.isChecked() ? "1" : "0");
+        s03.put("mnc12b", bi.mnc12b.isChecked() ? "2" : "0");
+        s03.put("mnc12c", bi.mnc12c.isChecked() ? "3" : "0");
+        s03.put("mnc12d", bi.mnc12d.isChecked() ? "4" : "0");
+        s03.put("mnc1298", bi.mnc1298.isChecked() ? "98" : "0");
+
+        s03.put("mnc13a", bi.mnc06a.isChecked() ? "1" : "0");
+        s03.put("mnc13b", bi.mnc06b.isChecked() ? "2" : "0");
+        s03.put("mnc13c", bi.mnc06c.isChecked() ? "3" : "0");
+        s03.put("mnc13d", bi.mnc06d.isChecked() ? "4" : "0");
+        s03.put("mnc13e", bi.mnc06e.isChecked() ? "5" : "0");
+        s03.put("mnc13f", bi.mnc06f.isChecked() ? "6" : "0");
+        s03.put("mnc13g", bi.mnc13g.isChecked() ? "7" : "0");
+        s03.put("mnc1398", bi.mnc0698.isChecked() ? "98" : "0");
+
+        s03.put("mnc14", bi.mnc14a.isChecked() ? "1"
+                : bi.mnc14b.isChecked() ? "2"
+                : bi.mnc1498.isChecked() ? "98"
+                : "0");
+        s03.put("mnc15", bi.mnc15.getText().toString());
+
     }
+
 
     private boolean UpdateDB() {
 

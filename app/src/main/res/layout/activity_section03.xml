@@ -62,7 +62,7 @@
                             android:text="@string/yes" />
 
                         <RadioButton
-                            android:id="@+id/mnb01b"
+                            android:id="@+id/mnc01b"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
@@ -70,7 +70,7 @@
                             android:text="@string/no" />
 
                         <RadioButton
-                            android:id="@+id/mnb0198"
+                            android:id="@+id/mnc0198"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
@@ -1156,7 +1156,7 @@
                                 android:text="@string/yes" />
 
                             <RadioButton
-                                android:id="@+id/mnb14b"
+                                android:id="@+id/mnc14b"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
@@ -1164,7 +1164,7 @@
                                 android:text="@string/no" />
 
                             <RadioButton
-                                android:id="@+id/mnb1498"
+                                android:id="@+id/mnc1498"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
