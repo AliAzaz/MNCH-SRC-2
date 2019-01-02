@@ -25,9 +25,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme1">
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.Section03Activity"
+            android:name=".ui.SplashscreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,11 +59,11 @@
         <activity android:name=".ui.Section02Activity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1"/>
-        <!--<activity android:name=".ui.Section03Activity"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@style/AppTheme1">-->
+        <activity android:name=".ui.Section03Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1">
 
-        <!--</activity>-->
+        </activity>
     </application>
 
 </manifest>
