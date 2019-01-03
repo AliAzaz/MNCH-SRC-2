@@ -75,6 +75,13 @@
                             android:text="@string/mnd01c" />
 
                         <CheckBox
+                            android:id="@+id/mnd01d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/mnd01d" />
+
+                        <CheckBox
                             android:id="@+id/mnd01e"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -208,6 +215,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="1dp"
                             android:text="@string/mnd02c" />
+
+                        <CheckBox
+                            android:id="@+id/mnd02d"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="@string/mnd02d" />
 
                         <CheckBox
                             android:id="@+id/mnd02e"
@@ -461,8 +475,6 @@
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-
-
 
 
         </LinearLayout>
