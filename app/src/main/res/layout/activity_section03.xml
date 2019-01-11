@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.Section03Activity">
 
@@ -90,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:elevation="10dp"
-                android:visibility='@{mnb01b.checked? View.VISIBLE : View.GONE}'>
+                android:visibility='@{mnc01b.checked? View.VISIBLE : View.GONE}'>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -125,7 +124,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:visibility='@{mnb01b.checked? View.GONE : View.VISIBLE}'>
+                android:visibility='@{mnc01b.checked? View.GONE : View.VISIBLE}'>
 
                 <!--Q03-->
                 <android.support.v7.widget.CardView
