@@ -218,7 +218,7 @@ public class MainActivity extends Activity {
         usersArray = new String[]{"....", MainApp.userName, MainApp.userName2};
 
         try {
-            Collection<?> data = new GetAllDBData(db, GetFncDAO.class.getName(), "getFncDao", "getUnSyncedForms_04_05").execute().get();
+            Collection<?> data = new GetAllDBData(db, GetFncDAO.class.getName(), "getFncDao", "getUnSyncedForms").execute().get();
             if (data != null) {
                 Toast.makeText(this, "" + data.size(), Toast.LENGTH_SHORT).show();
             }

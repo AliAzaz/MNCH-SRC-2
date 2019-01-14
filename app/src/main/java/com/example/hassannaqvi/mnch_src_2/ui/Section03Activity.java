@@ -127,7 +127,7 @@ public class Section03Activity extends AppCompatActivity {
 //        try {
 //            SaveDraft();
 //            if (UpdateDB()) {
-////                MainApp.endActivity(this, this, EndingActivity.class, true, fc_4_5);
+////                MainApp.endActivity(this, this, EndingActivity.class, true, fc);
 //            } else {
 //                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
 //            }
