@@ -188,7 +188,16 @@ public abstract class validatorClass {
                 cb.setError(null);
                 if (cb.isChecked()) {
                     flag = true;
-                    break;
+
+                    for (int j = 0; j < container.getChildCount(); j++) {
+                        View innerV = container.getChildAt(j);
+                        if (innerV instanceof EditText) {
+                            if (getIDComponent(cb).equals(innerV.getTag()))
+                                flag = EmptyTextBox(context, (EditText) innerV, getString(context, getIDComponent(innerV)));
+                        }
+                    }
+
+//                    break;
                 }
             }
         }
