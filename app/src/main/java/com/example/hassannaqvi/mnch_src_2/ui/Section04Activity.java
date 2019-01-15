@@ -1,46 +1,53 @@
 package com.example.hassannaqvi.mnch_src_2.ui;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
+import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
+import com.example.hassannaqvi.mnch_src_2.core.MainApp;
+import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection04Binding;
 import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.concurrent.ExecutionException;
+
+import static com.example.hassannaqvi.mnch_src_2.ui.LoginActivity.db;
 
 public class Section04Activity extends AppCompatActivity {
-
-
-    ActivitySection04Binding bi; // ?
-
+    ActivitySection04Binding bi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section04);
         bi.setCallback(this);
-
-
     }
 
     public void BtnContinue() {
         if (!formValidation())
             return;
-//        try {
-//            SaveDraft();
-//            if (UpdateDB()) {
-////                MainApp.endActivity(this, this, EndingActivity.class, true, fc);
-//            } else {
-//                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
-//            }
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            SaveDraft();
+            if (UpdateDB()) {
+                startActivity(new Intent(this, Section05Activity.class));
+            } else {
+                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
+    }
+
+    public void BtnEnd() {
+        MainApp.endActivity(this, this, EndingActivity.class, false, InfoActivity.fc);
     }
 
     private void SaveDraft() throws JSONException {
@@ -77,22 +84,35 @@ public class Section04Activity extends AppCompatActivity {
         s04.put("mnd0297", bi.mnd0297.isChecked() ? "97" : "0");
         s04.put("mnd0296x", bi.mnd0296x.getText().toString());
 
-        s04.put("mnd03",bi.mnd03a.isChecked()? "1"
-                : bi.mnd03b.isChecked()? "2"
-                : bi.mnd03c.isChecked()? "98" : "0");
+        s04.put("mnd03", bi.mnd03a.isChecked() ? "1"
+                : bi.mnd03b.isChecked() ? "2"
+                : bi.mnd03c.isChecked() ? "98" : "0");
 
-        s04.put("mnd04",bi.mnd04a.isChecked()? "1"
-                : bi.mnd04b.isChecked()? "2"
-                : bi.mnd04c.isChecked()? "98" : "0");
+        s04.put("mnd04", bi.mnd04a.isChecked() ? "1"
+                : bi.mnd04b.isChecked() ? "2"
+                : bi.mnd04c.isChecked() ? "98" : "0");
 
-        s04.put("mnd05",bi.mnd05a.isChecked()? "1"
-                : bi.mnd05b.isChecked()? "2"
-                : bi.mnd05c.isChecked()? "98" : "0");
+        s04.put("mnd05", bi.mnd05a.isChecked() ? "1"
+                : bi.mnd05b.isChecked() ? "2"
+                : bi.mnd05c.isChecked() ? "98" : "0");
+
+        InfoActivity.fc.setSa4(String.valueOf(s04));
     }
 
     private boolean UpdateDB() {
 
-        return true;
+        try {
+
+            Long longID = new crudOperations(db, InfoActivity.fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
+            return longID == 1;
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
     private boolean formValidation() {

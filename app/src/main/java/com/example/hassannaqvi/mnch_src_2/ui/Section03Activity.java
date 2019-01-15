@@ -1,17 +1,28 @@
 package com.example.hassannaqvi.mnch_src_2.ui;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
+import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
+import com.example.hassannaqvi.mnch_src_2.core.MainApp;
+import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection03Binding;
+import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
+import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
+
+import static com.example.hassannaqvi.mnch_src_2.ui.LoginActivity.db;
 
 public class Section03Activity extends AppCompatActivity {
 
@@ -23,11 +34,10 @@ public class Section03Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section03);
         bi.setCallback(this);
 
-
-        setupViews();
+        settingListeners();
     }
 
-    private void setupViews() {
+    private void settingListeners() {
 
         bi.mnc03.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -119,25 +129,113 @@ public class Section03Activity extends AppCompatActivity {
         bi.mnc08a.setOnCheckedChangeListener(check1);
         bi.mnc0898.setOnCheckedChangeListener(check1);
 
-    }
+        // 06
+        bi.mnc0698.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll06c, false);
+                    bi.fldGrpll06c.setTag("-1");
 
-    public void BtnContinue() {
-        if (!formValidation())
-            return;
-//        try {
-//            SaveDraft();
-//            if (UpdateDB()) {
-////                MainApp.endActivity(this, this, EndingActivity.class, true, fc);
-//            } else {
-//                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
-//            }
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
+                    bi.mnc0698.setTag(null);
+                } else {
+                    bi.mnc0698.setTag("-1");
 
-    }
+                    bi.fldGrpll06c.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll06c, true);
+                }
+            }
+        });
 
-    public void BtnEnd() {
+        // 07
+        bi.mnc0798.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll07c, false);
+                    bi.fldGrpll07c.setTag("-1");
+
+                    bi.mnc0798.setTag(null);
+                } else {
+                    bi.mnc0798.setTag("-1");
+
+                    bi.fldGrpll07c.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll07c, true);
+                }
+            }
+        });
+
+        // 08
+        bi.mnc0898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll08c, false);
+                    bi.fldGrpll08c.setTag("-1");
+
+                    bi.mnc0898.setTag(null);
+                } else {
+                    bi.mnc0898.setTag("-1");
+
+                    bi.fldGrpll08c.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll08c, true);
+                }
+            }
+        });
+
+        // 10
+        bi.mnc1098.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll10c, false);
+                    bi.fldGrpll10c.setTag("-1");
+
+                    bi.mnc1098.setTag(null);
+                } else {
+                    bi.mnc1098.setTag("-1");
+
+                    bi.fldGrpll10c.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll10c, true);
+                }
+            }
+        });
+
+        // 12
+        bi.mnc1298.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll12c, false);
+                    bi.fldGrpll12c.setTag("-1");
+
+                    bi.mnc1298.setTag(null);
+                } else {
+                    bi.mnc1298.setTag("-1");
+
+                    bi.fldGrpll12c.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll12c, true);
+                }
+            }
+        });
+
+        // 13
+        bi.mnc1398.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll13c, false);
+                    bi.fldGrpll13c.setTag("-1");
+
+                    bi.mnc1398.setTag(null);
+                } else {
+                    bi.mnc1398.setTag("-1");
+
+                    bi.fldGrpll13c.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll13c, true);
+                }
+            }
+        });
 
     }
 
@@ -252,16 +350,47 @@ public class Section03Activity extends AppCompatActivity {
                 : "0");
         s03.put("mnc15", bi.mnc15.getText().toString());
 
+        InfoActivity.fc.setSa3(String.valueOf(s03));
+
     }
 
+    public void BtnContinue() {
+        if (!formValidation())
+            return;
+        try {
+            SaveDraft();
+            if (UpdateDB()) {
+                startActivity(new Intent(this, Section04Activity.class));
+            } else {
+                Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void BtnEnd() {
+        MainApp.endActivity(this, this, EndingActivity.class, false, InfoActivity.fc);
+    }
 
     private boolean UpdateDB() {
 
-        return true;
+        try {
+
+            Long longID = new crudOperations(db, InfoActivity.fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
+            return longID == 1;
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
     private boolean formValidation() {
-
-        return true;
+        return validatorClass.EmptyCheckingContainer(this, bi.fldGrpSec03a);
     }
 }

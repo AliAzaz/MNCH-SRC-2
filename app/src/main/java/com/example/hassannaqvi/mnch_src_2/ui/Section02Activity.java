@@ -8,12 +8,19 @@ import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
+import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
+import com.example.hassannaqvi.mnch_src_2.core.MainApp;
+import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection02Binding;
 import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
 import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
+
+import static com.example.hassannaqvi.mnch_src_2.ui.LoginActivity.db;
 
 public class Section02Activity extends AppCompatActivity {
 
@@ -25,10 +32,10 @@ public class Section02Activity extends AppCompatActivity {
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section02);
         bi.setCallback(this);
 
-        settingLisners();
+        settingListeners();
     }
 
-    public void settingLisners() {
+    public void settingListeners() {
 
         bi.mnb0698.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -209,7 +216,7 @@ public class Section02Activity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-
+        MainApp.endActivity(this, this, EndingActivity.class, false, InfoActivity.fc);
     }
 
     private void SaveDraft() throws JSONException {
@@ -332,11 +339,23 @@ public class Section02Activity extends AppCompatActivity {
         s02.put("mnb1498", bi.mnb1498.isChecked() ? "98" : "0");
 
         s02.put("mnb1496x", bi.mnb1496x.getText().toString());
+
+        InfoActivity.fc.setSa2(String.valueOf(s02));
     }
 
     private boolean UpdateDB() {
+        try {
 
-        return true;
+            Long longID = new crudOperations(db, InfoActivity.fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
+            return longID == 1;
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
     private boolean formValidation() {
