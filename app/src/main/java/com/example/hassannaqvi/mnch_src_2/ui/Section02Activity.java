@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
@@ -37,7 +36,11 @@ public class Section02Activity extends AppCompatActivity {
                 if (b) {
                     ClearClass.ClearAllFields(bi.fldGrpll06a, false);
                     bi.fldGrpll06a.setTag("-1");
+
+                    bi.mnb0698.setTag(null);
                 } else {
+                    bi.mnb0698.setTag("-1");
+
                     bi.fldGrpll06a.setTag(null);
                     ClearClass.ClearAllFields(bi.fldGrpll06a, true);
                 }
@@ -50,7 +53,11 @@ public class Section02Activity extends AppCompatActivity {
                 if (b) {
                     ClearClass.ClearAllFields(bi.fldGrpll07a, false);
                     bi.fldGrpll07a.setTag("-1");
+
+                    bi.mnb0798.setTag(null);
                 } else {
+                    bi.mnb0798.setTag("-1");
+
                     bi.fldGrpll07a.setTag(null);
                     ClearClass.ClearAllFields(bi.fldGrpll07a, true);
                 }
@@ -63,7 +70,11 @@ public class Section02Activity extends AppCompatActivity {
                 if (b) {
                     ClearClass.ClearAllFields(bi.fldGrpll08a, false);
                     bi.fldGrpll08a.setTag("-1");
+
+                    bi.mnb0898.setTag(null);
                 } else {
+                    bi.mnb0898.setTag("-1");
+
                     bi.fldGrpll08a.setTag(null);
                     ClearClass.ClearAllFields(bi.fldGrpll08a, true);
                 }
@@ -76,7 +87,11 @@ public class Section02Activity extends AppCompatActivity {
                 if (b) {
                     ClearClass.ClearAllFields(bi.fldGrpll09a, false);
                     bi.fldGrpll09a.setTag("-1");
+
+                    bi.mnb0998.setTag(null);
                 } else {
+                    bi.mnb0998.setTag("-1");
+
                     bi.fldGrpll09a.setTag(null);
                     ClearClass.ClearAllFields(bi.fldGrpll09a, true);
                 }
@@ -89,36 +104,57 @@ public class Section02Activity extends AppCompatActivity {
                 if (b) {
                     ClearClass.ClearAllFields(bi.fldGrpll10a, false);
                     bi.fldGrpll10a.setTag("-1");
+
+                    bi.mnb1098.setTag(null);
                 } else {
+                    bi.mnb1098.setTag("-1");
+
                     bi.fldGrpll10a.setTag(null);
                     ClearClass.ClearAllFields(bi.fldGrpll10a, true);
                 }
             }
         });
 
-        CheckBox.OnCheckedChangeListener checked11 = new CompoundButton.OnCheckedChangeListener() {
+        bi.mnb1197.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (compoundButton.getId() == bi.mnb1197.getId()) {
+                if (b) {
                     ClearClass.ClearAllFields(bi.fldGrpll11a, false);
                     bi.fldGrpll11a.setTag("-1");
-                    bi.mnb1198.setEnabled(false);
-                    bi.mnb1198.setTag("-1");
-                } else if (compoundButton.getId() == bi.mnb1198.getId()) {
-                    ClearClass.ClearAllFields(bi.fldGrpll11a, false);
-                    bi.fldGrpll11a.setTag("-1");
-                    bi.mnb1197.setEnabled(false);
-                    bi.mnb1197.setTag("-1");
-                } else {
-                    bi.fldGrpll11a.setTag(null);
+
                     bi.mnb1197.setTag(null);
-                    bi.mnb1198.setTag(null);
+
+                    bi.mnb1198.setEnabled(false);
+                } else {
+                    bi.mnb1198.setEnabled(true);
+
+                    bi.mnb1197.setTag("-1");
+
+                    bi.fldGrpll11a.setTag(null);
                     ClearClass.ClearAllFields(bi.fldGrpll11a, true);
                 }
             }
-        };
-        bi.mnb1197.setOnCheckedChangeListener(checked11);
-        bi.mnb1198.setOnCheckedChangeListener(checked11);
+        });
+        bi.mnb1198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll11a, false);
+                    bi.fldGrpll11a.setTag("-1");
+
+                    bi.mnb1198.setTag(null);
+
+                    bi.mnb1197.setEnabled(false);
+                } else {
+                    bi.mnb1197.setEnabled(true);
+
+                    bi.mnb1198.setTag("-1");
+
+                    bi.fldGrpll11a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll11a, true);
+                }
+            }
+        });
 
         bi.mnb1398.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -126,7 +162,11 @@ public class Section02Activity extends AppCompatActivity {
                 if (b) {
                     ClearClass.ClearAllFields(bi.fldGrpll13a, false);
                     bi.fldGrpll13a.setTag("-1");
+
+                    bi.mnb1398.setTag(null);
                 } else {
+                    bi.mnb1398.setTag("-1");
+
                     bi.fldGrpll13a.setTag(null);
                     ClearClass.ClearAllFields(bi.fldGrpll13a, true);
                 }
@@ -139,7 +179,11 @@ public class Section02Activity extends AppCompatActivity {
                 if (b) {
                     ClearClass.ClearAllFields(bi.fldGrpll14a, false);
                     bi.fldGrpll14a.setTag("-1");
+
+                    bi.mnb1498.setTag(null);
                 } else {
+                    bi.mnb1498.setTag("-1");
+
                     bi.fldGrpll14a.setTag(null);
                     ClearClass.ClearAllFields(bi.fldGrpll14a, true);
                 }

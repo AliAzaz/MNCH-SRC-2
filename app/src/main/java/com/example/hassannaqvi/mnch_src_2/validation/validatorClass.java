@@ -306,6 +306,7 @@ public abstract class validatorClass {
                 if (!((CheckBox) view).isChecked()) {
                     ((CheckBox) view).setError(getString(context, getIDComponent(view)));
                     FancyToast.makeText(context, "ERROR(empty): " + getString(context, getIDComponent(view)), FancyToast.LENGTH_SHORT, FancyToast.ERROR, false).show();
+                    return false;
                 }
             } else if (view instanceof LinearLayout) {
 

@@ -513,11 +513,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
+                                android:tag="-1"
                                 android:text="@string/no_answer" />
 
 
                         </LinearLayout>
-
 
                     </android.support.v7.widget.CardView>
 
@@ -588,6 +588,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
+                                android:tag="-1"
                                 android:text="@string/no_answer" />
 
 
@@ -663,11 +664,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
+                                android:tag="-1"
                                 android:text="@string/no_answer" />
 
-
                         </LinearLayout>
-
 
                     </android.support.v7.widget.CardView>
 
@@ -738,8 +738,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
+                                android:tag="-1"
                                 android:text="@string/no_answer" />
-
 
                         </LinearLayout>
 
@@ -873,6 +873,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
+                                android:tag="-1"
                                 android:text="@string/mnb10k" />
 
 
@@ -956,6 +957,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
+                                android:tag="-1"
                                 android:text="@string/mnb11f" />
 
                             <CheckBox
@@ -964,6 +966,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
+                                android:tag="-1"
                                 android:text="@string/mnb11g" />
 
 
@@ -992,7 +995,6 @@
                                 android:text="@string/mnb12"
                                 android:textColor="@android:color/white"
                                 android:textSize="20sp" />
-
 
                             <RadioGroup
                                 android:id="@+id/mnb12"
@@ -1150,6 +1152,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
+                                android:tag="-1"
                                 android:text="@string/mnb13j" />
 
                         </LinearLayout>
@@ -1284,6 +1287,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="1dp"
                                 android:layout_weight="1"
+                                android:tag="-1"
                                 android:text="@string/no_answer" />
 
                         </LinearLayout>
