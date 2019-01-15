@@ -8,12 +8,18 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
+import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
 import com.example.hassannaqvi.mnch_src_2.core.MainApp;
+import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection05Binding;
 import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
+
+import static com.example.hassannaqvi.mnch_src_2.ui.LoginActivity.db;
 
 public class Section05Activity extends AppCompatActivity {
 
@@ -142,15 +148,22 @@ public class Section05Activity extends AppCompatActivity {
 
     private boolean UpdateDB() {
 
-        return true;
+        try {
+
+            Long longID = new crudOperations(db, InfoActivity.fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
+            return longID == 1;
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
     private boolean formValidation() {
 
-        if(!validatorClass.EmptyCheckingContainer(this,bi.fldGrpSection05)){
-            return false;
-        }
-
-        return true;
+        return validatorClass.EmptyCheckingContainer(this, bi.fldGrpSection05);
     }
 }

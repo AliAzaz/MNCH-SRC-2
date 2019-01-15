@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
 import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
+import com.example.hassannaqvi.mnch_src_2.core.CONSTANTS;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.data.entities.Forms;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivityEndingBinding;
@@ -26,7 +27,7 @@ public class EndingActivity extends AppCompatActivity {
     String dtToday = new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime());
 
     ActivityEndingBinding bi;
-    Forms fc04_05;
+    Forms fc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class EndingActivity extends AppCompatActivity {
 
         this.setTitle("End Interview");
 
-        Boolean check = getIntent().getExtras().getBoolean("complete");
+        Boolean check = getIntent().getExtras().getBoolean(CONSTANTS.URI_END_FLAG);
 
         if (check) {
             bi.istatusa.setEnabled(true);
@@ -51,7 +52,7 @@ public class EndingActivity extends AppCompatActivity {
             bi.istatusd.setEnabled(true);
         }
 
-        fc04_05 = (Forms) getIntent().getSerializableExtra("fc_data");
+        fc = (Forms) getIntent().getSerializableExtra(CONSTANTS.URI_END_OBJECT);
 
     }
 
@@ -67,13 +68,13 @@ public class EndingActivity extends AppCompatActivity {
     }
 
     private void SaveDraft() {
-        fc04_05.setIstatus(bi.istatusa.isChecked() ? "1" : bi.istatusb.isChecked() ? "2" : bi.istatusc.isChecked() ? "3" : bi.istatusd.isChecked() ? "4" : "0");
-        fc04_05.setEndtime(dtToday);
+        fc.setIstatus(bi.istatusa.isChecked() ? "1" : bi.istatusb.isChecked() ? "2" : bi.istatusc.isChecked() ? "3" : bi.istatusd.isChecked() ? "4" : "0");
+        fc.setEndtime(dtToday);
     }
 
     public boolean UpdateDB() {
         try {
-            Long longID = new crudOperations(db, fc04_05).execute(FormsDAO.class.getName(), "formsDao", "updateForm_04_05").get();
+            Long longID = new crudOperations(db, fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
             return longID == 1;
 
         } catch (InterruptedException e) {
