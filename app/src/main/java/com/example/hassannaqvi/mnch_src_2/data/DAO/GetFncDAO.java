@@ -14,16 +14,16 @@ import java.util.List;
 public interface GetFncDAO {
 
     @Query("SELECT * FROM " + AppDatabase.Sub_DBConnection.TABLE_FORMS + " WHERE synced = ''")
-    List<Forms> getUnSyncedForms_04_05();
+    List<Forms> getUnSyncedForms();
 
     @Query("SELECT * FROM " + AppDatabase.Sub_DBConnection.TABLE_FORMS)
-    List<Forms> getForms_04_05();
+    List<Forms> getForms();
 
     @Query("SELECT * FROM " + AppDatabase.Sub_DBConnection.TABLE_FORMS + " WHERE synced = '' AND formType = :formType")
-    List<Forms> getUnSyncedForms_04_05(String formType);
+    List<Forms> getUnSyncedForms(String formType);
 
     @Query("SELECT * FROM " + AppDatabase.Sub_DBConnection.TABLE_FORMS + " WHERE formType = :formType")
-    List<Forms> getForms_04_05(String formType);
+    List<Forms> getForms(String formType);
 
     @Query("SELECT * FROM " + AppDatabase.Sub_DBConnection.TABLE_FORMS + " WHERE formDate LIKE :date")
     List<Forms> getTodaysForms(String date);

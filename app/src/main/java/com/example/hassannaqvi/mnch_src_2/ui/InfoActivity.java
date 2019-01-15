@@ -37,7 +37,7 @@ public class InfoActivity extends AppCompatActivity {
 
     private static final String TAG = InfoActivity.class.getName();
     ActivityInfoBinding bi;
-    public static Forms fc_4_5;
+    public static Forms fc;
     String fTYPE = "", deviceID;
     Class<?> routeClass;
     Forms childDT;
@@ -70,7 +70,7 @@ public class InfoActivity extends AppCompatActivity {
                 } else {
                     ClearClass.ClearRadioButton(bi.mna03, false);
 
-                    bi.mna0301.setTag("");
+                    bi.mna0301.setTag(null);
                 }
             }
 
@@ -93,7 +93,7 @@ public class InfoActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if (i == bi.mna05b.getId())
-                    ClearClass.ClearAllFields(bi.fldgrpmn02);
+                    ClearClass.ClearAllFields(bi.fldgrpmn02, null);
             }
         });
 
@@ -112,7 +112,7 @@ public class InfoActivity extends AppCompatActivity {
                 } else {
                     ClearClass.ClearRadioButton(bi.mna06, false);
 
-                    bi.mna0601.setTag("");
+                    bi.mna0601.setTag(null);
                 }
             }
 
@@ -144,7 +144,7 @@ public class InfoActivity extends AppCompatActivity {
                     bi.mna0801.setTag("-1");
                 } else {
                     ClearClass.ClearRadioButton(bi.mna08, false);
-                    bi.mna0801.setTag("");
+                    bi.mna0801.setTag(null);
                 }
             }
 
@@ -239,14 +239,14 @@ public class InfoActivity extends AppCompatActivity {
 
         try {
 
-            Long longID = new crudOperations(db, fc_4_5).execute(FormsDAO.class.getName(), "formsDao", "insertForm_04_05").get();
+            Long longID = new crudOperations(db, fc).execute(FormsDAO.class.getName(), "formsDao", "insertForm").get();
 
             if (longID != 0) {
-                fc_4_5.setId(longID.intValue());
+                fc.setId(longID.intValue());
 
-                fc_4_5.setUid(deviceID + fc_4_5.getId());
+                fc.setUid(deviceID + fc.getId());
 
-                longID = new crudOperations(db, fc_4_5).execute(FormsDAO.class.getName(), "formsDao", "updateForm_04_05").get();
+                longID = new crudOperations(db, fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
                 return longID == 1;
 
             } else {
@@ -265,14 +265,14 @@ public class InfoActivity extends AppCompatActivity {
 
     private void SaveDraft() {
 
-        fc_4_5 = new Forms();
-        fc_4_5.setDevicetagID(MainApp.getTagName(this));
-        fc_4_5.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
-        fc_4_5.setUsername(MainApp.userName);
-        fc_4_5.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
-        fc_4_5.setDeviceID(deviceID);
+        fc = new Forms();
+        fc.setDevicetagID(MainApp.getTagName(this));
+        fc.setAppversion(MainApp.versionName + "." + MainApp.versionCode);
+        fc.setUsername(MainApp.userName);
+        fc.setFormDate(new SimpleDateFormat("dd-MM-yy HH:mm").format(new Date().getTime()));
+        fc.setDeviceID(deviceID);
 
-        setGPS(fc_4_5); // Set GPS
+        setGPS(fc); // Set GPS
 
         /*JSONObject jsonInfo = new JSONObject();
         try {
@@ -283,7 +283,7 @@ public class InfoActivity extends AppCompatActivity {
         }*/
 
         JSONObject Json = GeneratorClass.getContainerJSON(bi.fldgrpmna01, true);
-//        fc_4_5.setSInfo(String.valueOf(mergeJSONObjects(jsonInfo, Json)));
+//        fc.setSInfo(String.valueOf(mergeJSONObjects(jsonInfo, Json)));
 
     }
 
@@ -325,7 +325,7 @@ public class InfoActivity extends AppCompatActivity {
 
         SaveDraft();
         if (UpdateDB()) {
-            MainApp.endActivity(this, this, EndingActivity.class, false, fc_4_5);
+            MainApp.endActivity(this, this, EndingActivity.class, false, fc);
         } else {
             Toast.makeText(this, "Error in updating db!!", Toast.LENGTH_SHORT).show();
         }

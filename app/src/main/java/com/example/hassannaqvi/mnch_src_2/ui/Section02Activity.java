@@ -1,27 +1,201 @@
 package com.example.hassannaqvi.mnch_src_2.ui;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
+import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
+import com.example.hassannaqvi.mnch_src_2.core.MainApp;
+import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection02Binding;
+import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
 import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.concurrent.ExecutionException;
+
+import static com.example.hassannaqvi.mnch_src_2.ui.LoginActivity.db;
+
 public class Section02Activity extends AppCompatActivity {
 
-
     ActivitySection02Binding bi;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_section02);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_section02);
+        bi.setCallback(this);
+
+        settingListeners();
+    }
+
+    public void settingListeners() {
+
+        bi.mnb0698.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll06a, false);
+                    bi.fldGrpll06a.setTag("-1");
+
+                    bi.mnb0698.setTag(null);
+                } else {
+                    bi.mnb0698.setTag("-1");
+
+                    bi.fldGrpll06a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll06a, true);
+                }
+            }
+        });
+
+        bi.mnb0798.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll07a, false);
+                    bi.fldGrpll07a.setTag("-1");
+
+                    bi.mnb0798.setTag(null);
+                } else {
+                    bi.mnb0798.setTag("-1");
+
+                    bi.fldGrpll07a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll07a, true);
+                }
+            }
+        });
+
+        bi.mnb0898.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll08a, false);
+                    bi.fldGrpll08a.setTag("-1");
+
+                    bi.mnb0898.setTag(null);
+                } else {
+                    bi.mnb0898.setTag("-1");
+
+                    bi.fldGrpll08a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll08a, true);
+                }
+            }
+        });
+
+        bi.mnb0998.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll09a, false);
+                    bi.fldGrpll09a.setTag("-1");
+
+                    bi.mnb0998.setTag(null);
+                } else {
+                    bi.mnb0998.setTag("-1");
+
+                    bi.fldGrpll09a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll09a, true);
+                }
+            }
+        });
+
+        bi.mnb1098.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll10a, false);
+                    bi.fldGrpll10a.setTag("-1");
+
+                    bi.mnb1098.setTag(null);
+                } else {
+                    bi.mnb1098.setTag("-1");
+
+                    bi.fldGrpll10a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll10a, true);
+                }
+            }
+        });
+
+        bi.mnb1197.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll11a, false);
+                    bi.fldGrpll11a.setTag("-1");
+
+                    bi.mnb1197.setTag(null);
+
+                    bi.mnb1198.setEnabled(false);
+                } else {
+                    bi.mnb1198.setEnabled(true);
+
+                    bi.mnb1197.setTag("-1");
+
+                    bi.fldGrpll11a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll11a, true);
+                }
+            }
+        });
+        bi.mnb1198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll11a, false);
+                    bi.fldGrpll11a.setTag("-1");
+
+                    bi.mnb1198.setTag(null);
+
+                    bi.mnb1197.setEnabled(false);
+                } else {
+                    bi.mnb1197.setEnabled(true);
+
+                    bi.mnb1198.setTag("-1");
+
+                    bi.fldGrpll11a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll11a, true);
+                }
+            }
+        });
+
+        bi.mnb1398.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll13a, false);
+                    bi.fldGrpll13a.setTag("-1");
+
+                    bi.mnb1398.setTag(null);
+                } else {
+                    bi.mnb1398.setTag("-1");
+
+                    bi.fldGrpll13a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll13a, true);
+                }
+            }
+        });
+
+        bi.mnb1498.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.fldGrpll14a, false);
+                    bi.fldGrpll14a.setTag("-1");
+
+                    bi.mnb1498.setTag(null);
+                } else {
+                    bi.mnb1498.setTag("-1");
+
+                    bi.fldGrpll14a.setTag(null);
+                    ClearClass.ClearAllFields(bi.fldGrpll14a, true);
+                }
+            }
+        });
     }
 
     public void BtnContinue() {
@@ -42,7 +216,7 @@ public class Section02Activity extends AppCompatActivity {
     }
 
     public void BtnEnd() {
-
+        MainApp.endActivity(this, this, EndingActivity.class, false, InfoActivity.fc);
     }
 
     private void SaveDraft() throws JSONException {
@@ -165,11 +339,23 @@ public class Section02Activity extends AppCompatActivity {
         s02.put("mnb1498", bi.mnb1498.isChecked() ? "98" : "0");
 
         s02.put("mnb1496x", bi.mnb1496x.getText().toString());
+
+        InfoActivity.fc.setSa2(String.valueOf(s02));
     }
 
     private boolean UpdateDB() {
+        try {
 
-        return true;
+            Long longID = new crudOperations(db, InfoActivity.fc).execute(FormsDAO.class.getName(), "formsDao", "updateForm").get();
+            return longID == 1;
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
     private boolean formValidation() {
