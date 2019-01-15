@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection05Binding;
+import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -145,6 +146,9 @@ public class Section05Activity extends AppCompatActivity {
 
     private boolean formValidation() {
 
+        if(!validatorClass.EmptyCheckingContainer(this,bi.fldGrpSection05)){
+            return false;
+        }
 
         return true;
     }

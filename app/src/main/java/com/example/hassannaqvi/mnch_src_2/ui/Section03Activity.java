@@ -9,6 +9,7 @@ import android.widget.RadioGroup;
 
 import com.example.hassannaqvi.mnch_src_2.R;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection03Binding;
+import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -261,6 +262,63 @@ public class Section03Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
+
+        if (!validatorClass.EmptyRadioButton(this, bi.mnc01, bi.mnc01a, getString(R.string.mnc01))) {
+            return false;
+        }
+
+        if (bi.mnc01b.isChecked()) {
+            if (!validatorClass.EmptyTextBox(this, bi.mnc02, getString(R.string.mnc02))) {
+                return false;
+            }
+        } else {
+
+            if (!validatorClass.EmptyRadioButton(this, bi.mnc03, bi.mnc03a, getString(R.string.mnc03))) {
+                return false;
+            }
+
+            // checking 1,2,3,4,5,6 go to Q3.7
+            if (bi.mnc03a.isChecked() || bi.mnc03b.isChecked()
+                    || bi.mnc03c.isChecked()
+                    || bi.mnc03d.isChecked()
+                    || bi.mnc03e.isChecked()
+                    || bi.mnc03f.isChecked()) {
+
+                if (!validatorClass.EmptyRadioButton(this, bi.mnc05, bi.mnc05a, getString(R.string.mnc05))) {
+                    return false;
+                }
+                if(bi.mnc0596.isChecked()){
+                    if (!validatorClass.EmptyTextBox(this, bi.mnc0596x, getString(R.string.mnc05))) {
+                        return false;
+                    }
+                }
+                if (!validatorClass.EmptyCardCheckBox(this, bi.fldgrpmnc08, bi.mnc08a, getString(R.string.mnc08))) {
+                    return false;
+                }
+                if (bi.mnc08b.isChecked() || bi.mnc08c.isChecked() || bi.mnc08d.isChecked()) {
+                    if (!validatorClass.EmptyRadioButton(this, bi.mnc09, bi.mnc09a, getString(R.string.mnc09))) {
+                        return false;
+                    }
+                    if(bi.mnc0996.isChecked()){
+                        if (!validatorClass.EmptyTextBox(this, bi.mnc0996x, getString(R.string.mnc09))) {
+                            return false;
+                        }
+                    }
+
+                }
+            }
+
+            if(bi.mnc03g.isChecked() || bi.mnc03h.isChecked() || bi.mnc03i.isChecked()){
+                if (!validatorClass.EmptyRadioButton(this, bi.mnc04, bi.mnc04a, getString(R.string.mnc04))) {
+                    return false;
+                }
+                if (!validatorClass.EmptyCardCheckBox(this, bi.fldgrpmnc06, bi.mnc06a, getString(R.string.mnc06))) {
+                    return false;
+                }
+            }
+
+        }
+
 
         return true;
     }
