@@ -283,6 +283,7 @@ public class InfoActivity extends AppCompatActivity {
         }*/
 
         JSONObject Json = GeneratorClass.getContainerJSON(bi.fldgrpmna01, true);
+        fc.setSInfo(String.valueOf(Json));
 //        fc.setSInfo(String.valueOf(mergeJSONObjects(jsonInfo, Json)));
 
     }
