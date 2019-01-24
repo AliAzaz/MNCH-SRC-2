@@ -203,6 +203,7 @@
                                     android:layout_margin="10dp"
                                     android:hint="@string/mnb03a"
                                     android:inputType="number"
+                                    android:tag="mnb03a"
                                     android:text='@{mnb03a.checked ? mnb03ax.getText.toString : "" }'
                                     android:visibility='@{mnb03a.checked ? View.VISIBLE : View.GONE }' />
 
@@ -420,6 +421,7 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
+                                    android:tag="mnb0596"
                                     android:text='@{mnb0596.checked ? mnb0596x.getText.toString : "" }'
                                     android:visibility='@{mnb0596.checked ? View.VISIBLE : View.GONE }' />
 
@@ -1278,6 +1280,7 @@
                                     android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                     android:hint="@string/other"
                                     android:inputType="text"
+                                    android:tag="mnb1496"
                                     android:text='@{mnb1496.checked ? mnb1496x.getText.toString : "" }'
                                     android:visibility='@{mnb1496.checked ? View.VISIBLE : View.GONE }' />
 

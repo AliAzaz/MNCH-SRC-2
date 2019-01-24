@@ -251,6 +251,7 @@
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                 android:hint="@string/other"
                                 android:inputType="text"
+                                android:tag="mnc0396"
                                 android:visibility="gone" />
 
 
@@ -424,6 +425,7 @@
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                 android:hint="@string/other"
                                 android:inputType="text"
+                                android:tag="mnc0596"
                                 android:text='@{mnc0596.checked ? mnc0596x.getText.toString : "" }'
                                 android:visibility='@{mnc0596.checked ? View.VISIBLE : View.GONE }' />
 
@@ -772,6 +774,7 @@
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                 android:hint="@string/other"
                                 android:inputType="text"
+                                android:tag="mnc0996"
                                 android:text='@{mnc0996.checked ? mnc0996x.getText.toString : "" }'
                                 android:visibility='@{mnc0996.checked ? View.VISIBLE : View.GONE }' />
 
@@ -968,6 +971,7 @@
                                 android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                 android:hint="@string/other"
                                 android:inputType="text"
+                                android:tag="mnc1196"
                                 android:text='@{mnc1196.checked ? mnc1196x.getText.toString : "" }'
                                 android:visibility='@{mnc1196.checked ? View.VISIBLE : View.GONE }' />
 

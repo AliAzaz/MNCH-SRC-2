@@ -272,6 +272,7 @@
                                 android:id="@+id/mna0496x"
                                 style="@style/textInput"
                                 android:hint="@string/other"
+                                android:tag="mna0496"
                                 android:text='@{mna0496.checked ? mna0496x.getText.toString : ""}'
                                 android:visibility="@{mna0496.checked ? View.VISIBLE : View.GONE}" />
 
@@ -466,6 +467,7 @@
                                     android:id="@+id/mna0796x"
                                     style="@style/textInput"
                                     android:hint="@string/other"
+                                    android:tag="mna0796"
                                     android:text='@{mna0796.checked ? mna0796x.getText.toString : ""}'
                                     android:visibility="@{mna0796.checked ? View.VISIBLE : View.GONE}" />
 
@@ -581,6 +583,7 @@
                                 android:id="@+id/mna0996x"
                                 style="@style/textInput"
                                 android:hint="@string/other"
+                                android:tag="mna0996"
                                 android:text='@{mna0996.checked ? mna0996x.getText.toString : ""}'
                                 android:visibility="@{mna0996.checked ? View.VISIBLE : View.GONE}" />
 

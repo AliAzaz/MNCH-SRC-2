@@ -141,6 +141,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
+                            android:tag="mnd0196"
                             android:text='@{mnd0196.checked ? mnd0196x.getText.toString : "" }'
                             android:visibility='@{mnd0196.checked ? View.VISIBLE : View.GONE }' />
 
@@ -283,6 +284,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
+                            android:tag="mnd0296"
                             android:text='@{mnd0296.checked ? mnd0296x.getText.toString : "" }'
                             android:visibility='@{mnd0296.checked ? View.VISIBLE : View.GONE }' />
 

@@ -28,7 +28,7 @@ import java.lang.reflect.Field;
  * modified by ramsha.seed on 7/8/2018
  */
 
-public abstract class validatorClass {
+public abstract class ValidatorClass {
 
     public static boolean EmptyTextBox(Context context, EditText txt, String msg) {
         if (TextUtils.isEmpty(txt.getText().toString())) {
@@ -150,9 +150,22 @@ public abstract class validatorClass {
             Log.i(context.getClass().getName(), context.getResources().getResourceEntryName(rdGrp.getId()) + ": This data is Required!");
             return false;
         } else {
-            rdBtn.setError(null);
-            rdBtn.clearFocus();
-            return true;
+            boolean rdbFlag = true;
+            for (int j = 0; j < rdGrp.getChildCount(); j++) {
+                View innerV = rdGrp.getChildAt(j);
+                if (innerV instanceof EditText) {
+                    if (getIDComponent(rdGrp.findViewById(rdGrp.getCheckedRadioButtonId())).equals(innerV.getTag()))
+                        rdbFlag = EmptyTextBox(context, (EditText) innerV, getString(context, getIDComponent(innerV)));
+                }
+            }
+
+            if (rdbFlag) {
+                rdBtn.setError(null);
+                rdBtn.clearFocus();
+                return rdbFlag;
+            } else
+                return rdbFlag;
+
         }
     }
 

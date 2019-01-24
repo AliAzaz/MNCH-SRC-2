@@ -174,6 +174,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
+                            android:tag="mne0196"
                             android:text='@{mne0196.checked ? mne0196x.getText.toString : "" }'
                             android:visibility='@{mne0196.checked ? View.VISIBLE : View.GONE }' />
 
@@ -424,6 +425,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
+                            android:tag="mne0496"
                             android:text='@{mne0496.checked ? mne0496x.getText.toString : "" }'
                             android:visibility='@{mne0496.checked ? View.VISIBLE : View.GONE }' />
 
@@ -477,6 +479,7 @@
                             android:layout_margin="10dp"
                             android:hint="Minutes"
                             android:inputType="text"
+                            android:tag="mne05a"
                             android:text='@{mne05a.checked? mne05x.getText.toString : "" }'
                             android:visibility='@{mne05a.checked? View.VISIBLE : View.GONE}' />
 
@@ -663,6 +666,7 @@
                             android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                             android:hint="@string/other"
                             android:inputType="text"
+                            android:tag="mne0796"
                             android:text='@{mne0796.checked ? mne0796x.getText.toString : "" }'
                             android:visibility='@{mne0796.checked ? View.VISIBLE : View.GONE }' />
 
