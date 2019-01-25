@@ -33,7 +33,7 @@ public class MainApp extends Application {
     public static final String _IP = "43.245.131.159"; // Test PHP server
     //    public static final String _IP = "f49461"; // Test PHP server
     public static final Integer _PORT = 8080; // Port - with colon (:)
-    public static final String _HOST_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/leapsup/api/";
+    public static final String _HOST_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/src2/api/";
     // public static final String TEST_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/leapsup/api/";
 
     //    public static final String _UPDATE_URL = "http://" + MainApp._IP + ":" + MainApp._PORT + "/wfp_recruit_form/app/app-debug.apk";
@@ -78,14 +78,6 @@ public class MainApp extends Application {
     public static String HHno;
     public static String IMEI;
     public static final String FORM01A = "1a";
-    public static final String FORM01B = "1b";
-    public static final String FORM04 = "4";
-    public static final String FORM05 = "5";
-    public static final String FORM06 = "6";
-    public static final String FORM07 = "7";
-    public static final String FORM08 = "8";
-    public static final String FORM09 = "9";
-    public static final String FORM14 = "14";
 
     protected static LocationManager locationManager;
 

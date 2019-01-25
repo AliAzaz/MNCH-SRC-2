@@ -34,7 +34,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>`
+        </activity>
+        `
         <activity
             android:name=".ui.LoginActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -56,14 +57,22 @@
             android:name=".ui.InfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme1" />
-        <activity android:name=".ui.Section02Activity"
+        <activity
+            android:name=".ui.Section02Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1"/>
-        <activity android:name=".ui.Section03Activity"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.Section03Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme1">
-
-        </activity>
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.Section04Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".ui.Section05Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1" />
     </application>
 
 </manifest>

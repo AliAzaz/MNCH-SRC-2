@@ -12,7 +12,7 @@ import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
 import com.example.hassannaqvi.mnch_src_2.core.MainApp;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection05Binding;
-import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
+import com.example.hassannaqvi.mnch_src_2.validation.ValidatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -164,6 +164,6 @@ public class Section05Activity extends AppCompatActivity {
 
     private boolean formValidation() {
 
-        return validatorClass.EmptyCheckingContainer(this, bi.fldGrpSection05);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSection05);
     }
 }

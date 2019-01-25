@@ -1,6 +1,5 @@
 package com.example.hassannaqvi.mnch_src_2.JSON;
 
-import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.CheckBox;
@@ -10,8 +9,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
-import com.example.hassannaqvi.mnch_src_2.R;
-import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
+import com.example.hassannaqvi.mnch_src_2.validation.ValidatorClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,7 +42,7 @@ public abstract class GeneratorClass {
                 } else if (view instanceof RadioGroup) {
 
                     RadioGroup rdp = (RadioGroup) view;
-                    assig_id += validatorClass.getIDComponent(rdp);
+                    assig_id += ValidatorClass.getIDComponent(rdp);
                     int rdbID = rdp.getCheckedRadioButtonId();
 
                     if (rdbID != -1) {
@@ -55,7 +53,7 @@ public abstract class GeneratorClass {
 
                                 RadioButton rdb = rdp.findViewById(((RadioGroup) view).getChildAt(j).getId());
 
-                                formJSON.put(assig_id, getValues(validatorClass.getIDComponent(rdb)));
+                                formJSON.put(assig_id, getValues(ValidatorClass.getIDComponent(rdb)));
 
                                 break;
                             }
@@ -65,20 +63,20 @@ public abstract class GeneratorClass {
                         formJSON.put(assig_id, "0");
                     }
                 } else if (view instanceof io.blackbox_vision.datetimepickeredittext.view.DatePickerInputEditText) {
-                    assig_id += validatorClass.getIDComponent(view);
+                    assig_id += ValidatorClass.getIDComponent(view);
                     formJSON.put(assig_id, ((DatePickerInputEditText) view).getText().toString());
                 } else if (view instanceof EditText) {
-                    assig_id += validatorClass.getIDComponent(view);
+                    assig_id += ValidatorClass.getIDComponent(view);
                     formJSON.put(assig_id, ((EditText) view).getText().toString());
                 } else if (view instanceof CheckBox) {
-                    assig_id += validatorClass.getIDComponent(view);
+                    assig_id += ValidatorClass.getIDComponent(view);
                     if (((CheckBox) view).isChecked()) {
                         formJSON.put(assig_id, getValues(assig_id));
                     } else {
                         formJSON.put(assig_id, "0");
                     }
                 } else if (view instanceof Spinner) {
-                    assig_id += validatorClass.getIDComponent(view);
+                    assig_id += ValidatorClass.getIDComponent(view);
                     if (((Spinner) view).getSelectedItemPosition() != 0) {
                         formJSON.put(assig_id, ((Spinner) view).getSelectedItem());
                     } else {

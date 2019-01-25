@@ -23,7 +23,7 @@ import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.data.entities.Forms;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivityInfoBinding;
 import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
-import com.example.hassannaqvi.mnch_src_2.validation.validatorClass;
+import com.example.hassannaqvi.mnch_src_2.validation.ValidatorClass;
 
 import org.json.JSONObject;
 
@@ -177,7 +177,7 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     public void BtnIDValid() {
-        /*if (!validatorClass.EmptyTextBox(this, bi.lsid1, getString(R.string.ls01a01))) {
+        /*if (!ValidatorClass.EmptyTextBox(this, bi.lsid1, getString(R.string.ls01a01))) {
             return;
         }
 
@@ -319,7 +319,7 @@ public class InfoActivity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-        return validatorClass.EmptyCheckingContainer(this, bi.fldgrpmna01);
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldgrpmna01);
     }
 
     public void BtnEnd() {

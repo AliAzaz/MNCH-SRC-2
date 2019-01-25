@@ -24,13 +24,11 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
-import com.example.hassannaqvi.mnch_src_2.core.CONSTANTS;
 import com.example.hassannaqvi.mnch_src_2.core.MainApp;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.GetFncDAO;
 import com.example.hassannaqvi.mnch_src_2.data.entities.Forms;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivityMainBinding;
 import com.example.hassannaqvi.mnch_src_2.get.db.GetAllDBData;
-import com.example.hassannaqvi.mnch_src_2.sync.SyncAllData;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -75,8 +73,6 @@ public class MainActivity extends Activity {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
         }
-        // mainBinding.lblheader.setText("Welcome! You're assigned to block ' " + MainApp.userName);
-        mainBinding.lblheader.setText("Welcome!");
 
         /*TagID Start*/
         sharedPref = getSharedPreferences("tagName", MODE_PRIVATE);
@@ -366,7 +362,8 @@ public class MainActivity extends Activity {
                 Toast.makeText(getApplicationContext(), "Syncing Forms", Toast.LENGTH_SHORT).show();
 
                 /*Upload Form 01a*/
-                Collection collection1 = null;
+
+                /*Collection collection1 = null;
                 try {
                     collection1 = new GetAllDBData(db, GetFncDAO.class.getName(), "getFncDao", "getUnSyncedForms_04_05").execute(MainApp.FORM01A).get();
                 } catch (ExecutionException e) {
@@ -380,7 +377,7 @@ public class MainActivity extends Activity {
                         "updateSyncedForms_04_05",
                         Forms.class,
                         MainApp._HOST_URL + CONSTANTS.URL_FORMS.replace(".php", MainApp.FORM01A + ".php"), collection1
-                ).execute();
+                ).execute();*/
 
                 SharedPreferences syncPref = getSharedPreferences("SyncInfo", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = syncPref.edit();
