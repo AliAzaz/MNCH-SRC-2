@@ -12,6 +12,7 @@ import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
 import com.example.hassannaqvi.mnch_src_2.core.MainApp;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection05Binding;
+import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
 import com.example.hassannaqvi.mnch_src_2.validation.ValidatorClass;
 
 import org.json.JSONException;
@@ -29,6 +30,7 @@ public class Section05Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section05);
+        bi.setCallback(this);
 
         setupViews();
     }
@@ -42,6 +44,7 @@ public class Section05Activity extends AppCompatActivity {
                 if (checkedId == bi.mne05b.getId()
                         || checkedId == bi.mne05c.getId()) {
                     bi.fldgrpmne06.setVisibility(View.GONE);
+                    ClearClass.ClearAllFields(bi.fldgrpmne06, null);
                 } else {
                     bi.fldgrpmne06.setVisibility(View.VISIBLE);
                 }

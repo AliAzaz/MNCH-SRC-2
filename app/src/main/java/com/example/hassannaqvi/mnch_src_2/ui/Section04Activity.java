@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.example.hassannaqvi.mnch_src_2.R;
@@ -11,6 +12,7 @@ import com.example.hassannaqvi.mnch_src_2.RMOperations.crudOperations;
 import com.example.hassannaqvi.mnch_src_2.core.MainApp;
 import com.example.hassannaqvi.mnch_src_2.data.DAO.FormsDAO;
 import com.example.hassannaqvi.mnch_src_2.databinding.ActivitySection04Binding;
+import com.example.hassannaqvi.mnch_src_2.validation.ClearClass;
 import com.example.hassannaqvi.mnch_src_2.validation.ValidatorClass;
 
 import org.json.JSONException;
@@ -28,6 +30,96 @@ public class Section04Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         bi = DataBindingUtil.setContentView(this, R.layout.activity_section04);
         bi.setCallback(this);
+
+        setListeners();
+    }
+
+    private void setListeners() {
+//        01
+        bi.mnd0197.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.mnd01, false);
+                    bi.mnd01.setTag("-1");
+
+                    bi.mnd0197.setTag(null);
+
+                    bi.mnd0198.setEnabled(false);
+                } else {
+                    bi.mnd0198.setEnabled(true);
+
+                    bi.mnd0197.setTag("-1");
+
+                    bi.mnd01.setTag(null);
+                    ClearClass.ClearAllFields(bi.mnd01, true);
+                }
+            }
+        });
+        bi.mnd0198.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.mnd01, false);
+                    bi.mnd01.setTag("-1");
+
+                    bi.mnd0198.setTag(null);
+
+                    bi.mnd0197.setEnabled(false);
+                } else {
+                    bi.mnd0197.setEnabled(true);
+
+                    bi.mnd0198.setTag("-1");
+
+                    bi.mnd01.setTag(null);
+                    ClearClass.ClearAllFields(bi.mnd01, true);
+                }
+            }
+        });
+
+//        02
+        bi.mnd0297.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.mnd02, false);
+                    bi.mnd02.setTag("-1");
+
+                    bi.mnd0297.setTag(null);
+
+                    bi.mnd0298.setEnabled(false);
+                } else {
+                    bi.mnd0298.setEnabled(true);
+
+                    bi.mnd0297.setTag("-1");
+
+                    bi.mnd02.setTag(null);
+                    ClearClass.ClearAllFields(bi.mnd02, true);
+                }
+            }
+        });
+        bi.mnd0298.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    ClearClass.ClearAllFields(bi.mnd02, false);
+                    bi.mnd02.setTag("-1");
+
+                    bi.mnd0298.setTag(null);
+
+                    bi.mnd0297.setEnabled(false);
+                } else {
+                    bi.mnd0297.setEnabled(true);
+
+                    bi.mnd0298.setTag("-1");
+
+                    bi.mnd02.setTag(null);
+                    ClearClass.ClearAllFields(bi.mnd02, true);
+                }
+            }
+        });
+
+
     }
 
     public void BtnContinue() {
@@ -116,26 +208,6 @@ public class Section04Activity extends AppCompatActivity {
     }
 
     private boolean formValidation() {
-
-
-        if (!ValidatorClass.EmptyCheckBox(this, bi.mnd01, bi.mnd01a, getString(R.string.mnd01))) {
-            return false;
-        }
-
-        if (!ValidatorClass.EmptyCheckBox(this, bi.mnd02, bi.mnd02a, getString(R.string.mnd02))) {
-            return false;
-        }
-
-        if (!ValidatorClass.EmptyRadioButton(this, bi.mnd03, bi.mnd03a, getString(R.string.mnd03))) {
-            return false;
-        }
-
-
-        if (!ValidatorClass.EmptyRadioButton(this, bi.mnd04, bi.mnd04a, getString(R.string.mnd04))) {
-            return false;
-        }
-
-
-        return ValidatorClass.EmptyRadioButton(this, bi.mnd05, bi.mnd05a, getString(R.string.mnd05));
+        return ValidatorClass.EmptyCheckingContainer(this, bi.fldGrpSection04);
     }
 }

@@ -498,8 +498,7 @@
                             android:id="@+id/mna0801"
                             style="@style/EditText_number"
                             android:hint="@string/mna0801"
-                            android:maxLength="2"
-                            android:tag="" />
+                            android:maxLength="6" />
 
                         <RadioGroup
                             android:id="@+id/mna08"
